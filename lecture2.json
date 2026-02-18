@@ -1,0 +1,391 @@
+{
+  "subject": "Software Quality Assurance and Testing - Lecture 2",
+  "topic": "STLC and Testing Strategies",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does the abbreviation STLC stand for? [cite: 19]",
+      "options": [
+        "System Technical Life Cycle",
+        "Software Testing Life Cycle",
+        "Standard Testing Logic Code",
+        "Software Technical Logic Cycle"
+      ],
+      "correct_answer": "Software Testing Life Cycle"
+    },
+    {
+      "id": 2,
+      "question": "STLC involves which two primary activities? [cite: 17]",
+      "options": [
+        "Coding and Debugging",
+        "Verification and Validation",
+        "Planning and Deletion",
+        "Design and Implementation"
+      ],
+      "correct_answer": "Verification and Validation"
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is NOT a phase of the STLC? [cite: 20-26]",
+      "options": [
+        "Requirement Analysis",
+        "Test Planning",
+        "Code Development",
+        "Test Cycle Closure"
+      ],
+      "correct_answer": "Code Development"
+    },
+    {
+      "id": 4,
+      "question": "What is the definition of 'Entry Criteria' in STLC? [cite: 28]",
+      "options": [
+        "Items that must be completed before testing can conclude",
+        "Prerequisite items that must be completed before testing can begin",
+        "The list of defects found during testing",
+        "The cost estimation for the project"
+      ],
+      "correct_answer": "Prerequisite items that must be completed before testing can begin"
+    },
+    {
+      "id": 5,
+      "question": "In an ideal world, when should you enter the next stage of STLC? [cite: 31]",
+      "options": [
+        "When the deadline is reached",
+        "When the developers say the code is ready",
+        "When the exit criteria for the previous stage is met",
+        "When the budget allows it"
+      ],
+      "correct_answer": "When the exit criteria for the previous stage is met"
+    },
+    {
+      "id": 6,
+      "question": "What is the main purpose of the Requirement Traceability Matrix (RTM)? [cite: 49]",
+      "options": [
+        "To estimate the cost of the project",
+        "To validate that all requirements are checked via test cases",
+        "To assign tasks to developers",
+        "To design the user interface"
+      ],
+      "correct_answer": "To validate that all requirements are checked via test cases"
+    },
+    {
+      "id": 7,
+      "question": "Which document is a deliverable of the Requirement Phase Testing? [cite: 43-45]",
+      "options": [
+        "Test Plan",
+        "Defect Report",
+        "Automation Feasibility Report",
+        "Source Code"
+      ],
+      "correct_answer": "Automation Feasibility Report"
+    },
+    {
+      "id": 8,
+      "question": "Who typically determines the test plan strategy during the Test Planning phase? [cite: 152]",
+      "options": [
+        "The Client",
+        "The Junior Tester",
+        "The Senior QA Manager",
+        "The Developer"
+      ],
+      "correct_answer": "The Senior QA Manager"
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is an activity of the Test Planning phase? [cite: 158, 160]",
+      "options": [
+        "Executing test scripts",
+        "Writing code for the application",
+        "Resource planning and test effort estimation",
+        "Fixing bugs"
+      ],
+      "correct_answer": "Resource planning and test effort estimation"
+    },
+    {
+      "id": 10,
+      "question": "What is the main activity during the Test Case Development Phase? [cite: 166]",
+      "options": [
+        "Creation and verification of test cases and scripts",
+        "Negotiating the budget",
+        "Installing the software on the server",
+        "Closing the test cycle"
+      ],
+      "correct_answer": "Creation and verification of test cases and scripts"
+    },
+    {
+      "id": 11,
+      "question": "What allows the Test Case Development Phase to proceed in parallel with Test Environment Setup? [cite: 178]",
+      "options": [
+        "They are independent activities",
+        "Test Environment Setup is a critical aspect done alongside development",
+        "The project manager mandates it",
+        "Test cases do not require an environment"
+      ],
+      "correct_answer": "Test Environment Setup is a critical aspect done alongside development"
+    },
+    {
+      "id": 12,
+      "question": "What type of test is performed to check the readiness of the test environment? [cite: 180]",
+      "options": [
+        "Regression Test",
+        "Smoke Test",
+        "Stress Test",
+        "Unit Test"
+      ],
+      "correct_answer": "Smoke Test"
+    },
+    {
+      "id": 13,
+      "question": "Which activity is part of the Test Execution Phase? [cite: 196]",
+      "options": [
+        "Mapping defects to test cases in RTM",
+        "Selecting test tools",
+        "Writing the Test Plan",
+        "Defining acceptance criteria"
+      ],
+      "correct_answer": "Mapping defects to test cases in RTM"
+    },
+    {
+      "id": 14,
+      "question": "What is a deliverable of the Test Execution Phase? [cite: 203]",
+      "options": [
+        "Test Plan Document",
+        "Defect Reports",
+        "Requirements Document",
+        "Hardware Checklist"
+      ],
+      "correct_answer": "Defect Reports"
+    },
+    {
+      "id": 15,
+      "question": "What is the goal of the Test Cycle Closure phase? [cite: 207-208]",
+      "options": [
+        "To start coding the next feature",
+        "To remove process bottlenecks for future test cycles",
+        "To fire underperforming employees",
+        "To increase the project budget"
+      ],
+      "correct_answer": "To remove process bottlenecks for future test cycles"
+    },
+    {
+      "id": 16,
+      "question": "Which layer is at the base of the Test Automation Pyramid? [cite: 284]",
+      "options": [
+        "UI Tests",
+        "Integration Tests",
+        "Unit Tests",
+        "Manual Tests"
+      ],
+      "correct_answer": "Unit Tests"
+    },
+    {
+      "id": 17,
+      "question": "According to the Pyramid Strategy, which tests should be the most numerous? [cite: 341, 401]",
+      "options": [
+        "UI Tests",
+        "Integration Tests",
+        "Unit Tests",
+        "Manual Tests"
+      ],
+      "correct_answer": "Unit Tests"
+    },
+    {
+      "id": 18,
+      "question": "What characterizes Unit Tests? [cite: 285-286]",
+      "options": [
+        "They test the entire system flow",
+        "They rely on external dependencies",
+        "They test isolated units of code and are small in scope",
+        "They require a User Interface"
+      ],
+      "correct_answer": "They test isolated units of code and are small in scope"
+    },
+    {
+      "id": 19,
+      "question": "What is the focus of Integration Testing? [cite: 313]",
+      "options": [
+        "Testing isolated units of code",
+        "Testing through a user interface",
+        "Testing how different components of the system work together",
+        "Manual exploratory testing"
+      ],
+      "correct_answer": "Testing how different components of the system work together"
+    },
+    {
+      "id": 20,
+      "question": "Which tests are at the top of the Test Automation Pyramid? [cite: 337]",
+      "options": [
+        "Unit Tests",
+        "Integration Tests",
+        "UI and Exploratory Tests (End-to-End)",
+        "Database Tests"
+      ],
+      "correct_answer": "UI and Exploratory Tests (End-to-End)"
+    },
+    {
+      "id": 21,
+      "question": "Which type of test has the highest maintenance cost and slowest execution time? [cite: 390, 402, 403]",
+      "options": [
+        "Unit Tests",
+        "Integration Tests",
+        "End-to-End (E2E) Tests",
+        "Component Tests"
+      ],
+      "correct_answer": "End-to-End (E2E) Tests"
+    },
+    {
+      "id": 22,
+      "question": "When should a test case be automated? [cite: 270, 275]",
+      "options": [
+        "When it is performed only once",
+        "When the requirements are unstable",
+        "When the task is repetitive and time-consuming",
+        "When it requires human intuition"
+      ],
+      "correct_answer": "When the task is repetitive and time-consuming"
+    },
+    {
+      "id": 23,
+      "question": "What is the 'Ice-Cream Cone Anti-Pattern'? [cite: 410, 414]",
+      "options": [
+        "A strategy where Unit Tests are the majority",
+        "A strategy where most testing is done manually and the pyramid is inverted",
+        "A strategy focused solely on security testing",
+        "A strategy that ignores Integration testing"
+      ],
+      "correct_answer": "A strategy where most testing is done manually and the pyramid is inverted"
+    },
+    {
+      "id": 24,
+      "question": "In the Ice-Cream Cone pattern, what happens to the team? [cite: 416]",
+      "options": [
+        "They become more efficient",
+        "They are stretched thin with upper-level tests",
+        "They stop writing code",
+        "They focus only on Unit Tests"
+      ],
+      "correct_answer": "They are stretched thin with upper-level tests"
+    },
+    {
+      "id": 25,
+      "question": "In the Agile Quadrant Strategy, what does Quadrant 1 (Q1) focus on? [cite: 435, 448]",
+      "options": [
+        "Business-facing tests that critique the product",
+        "Technology-facing tests that support the team",
+        "Business-facing tests that support the team",
+        "Technology-facing tests that critique the product"
+      ],
+      "correct_answer": "Technology-facing tests that support the team"
+    },
+    {
+      "id": 26,
+      "question": "Which types of tests are included in Agile Quadrant 1 (Q1)? [cite: 449]",
+      "options": [
+        "Unit Tests and Component Tests",
+        "Functional Tests and Prototypes",
+        "UAT and Usability Testing",
+        "Performance and Security Testing"
+      ],
+      "correct_answer": "Unit Tests and Component Tests"
+    },
+    {
+      "id": 27,
+      "question": "What is the focus of Agile Quadrant 2 (Q2)? [cite: 436, 455]",
+      "options": [
+        "Technology-facing tests that critique the product",
+        "Business-facing tests that support the team",
+        "Technology-facing tests that support the team",
+        "Manual exploratory testing only"
+      ],
+      "correct_answer": "Business-facing tests that support the team"
+    },
+    {
+      "id": 28,
+      "question": "Which tools are commonly used in Agile Quadrant 2 (Q2)? [cite: 460]",
+      "options": [
+        "jMeter and LoadRunner",
+        "Eclipse and IntelliJ Idea",
+        "Cucumber and Selenium",
+        "Simulators and Emulators"
+      ],
+      "correct_answer": "Cucumber and Selenium"
+    },
+    {
+      "id": 29,
+      "question": "What does Agile Quadrant 3 (Q3) involve? [cite: 462, 463]",
+      "options": [
+        "Automated Unit Testing",
+        "Performance and Load Testing",
+        "Evaluating the product via user experience and critical thinking",
+        "Writing code for features"
+      ],
+      "correct_answer": "Evaluating the product via user experience and critical thinking"
+    },
+    {
+      "id": 30,
+      "question": "Which tests belong to Agile Quadrant 3 (Q3)? [cite: 462]",
+      "options": [
+        "Exploratory Testing and User Acceptance Testing (UAT)",
+        "Unit Testing and API Testing",
+        "Security and Stability Testing",
+        "Functional and Story Tests"
+      ],
+      "correct_answer": "Exploratory Testing and User Acceptance Testing (UAT)"
+    },
+    {
+      "id": 31,
+      "question": "What is the focus of Agile Quadrant 4 (Q4)? [cite: 438, 466]",
+      "options": [
+        "Business-facing tests that support the team",
+        "Technology-facing tests that critique the product",
+        "Manual regression testing",
+        "Prototyping"
+      ],
+      "correct_answer": "Technology-facing tests that critique the product"
+    },
+    {
+      "id": 32,
+      "question": "Which 'ility' tests are covered in Agile Quadrant 4 (Q4)? [cite: 468]",
+      "options": [
+        "Usability and Readability",
+        "Stability, Scalability, and Maintainability",
+        "Traceability and Visibility",
+        "Agility and Flexibility"
+      ],
+      "correct_answer": "Stability, Scalability, and Maintainability"
+    },
+    {
+      "id": 33,
+      "question": "In the Honeycomb Strategy, what are the two main optimization goals? [cite: 474, 482]",
+      "options": [
+        "Optimize for Speed and Cost",
+        "Optimize for Coverage and Optimize for Value",
+        "Optimize for Hardware and Software",
+        "Optimize for Developers and Managers"
+      ],
+      "correct_answer": "Optimize for Coverage and Optimize for Value"
+    },
+    {
+      "id": 34,
+      "question": "Which testing type typically uses tools like jMeter and LoadRunner? [cite: 469]",
+      "options": [
+        "Q1 (Unit Testing)",
+        "Q2 (Functional Testing)",
+        "Q3 (UAT)",
+        "Q4 (Performance & Load Testing)"
+      ],
+      "correct_answer": "Q4 (Performance & Load Testing)"
+    },
+    {
+      "id": 35,
+      "question": "What is the primary role of automation in testing? [cite: 282]",
+      "options": [
+        "To replace manual testers completely",
+        "To increase the cost of the project",
+        "To enhance testing and help testers do their job",
+        "To make the code look better"
+      ],
+      "correct_answer": "To enhance testing and help testers do their job"
+    }
+  ]
+}

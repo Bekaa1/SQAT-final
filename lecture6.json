@@ -1,0 +1,336 @@
+{
+    "subject": "Software Quality Assurance and Testing - Lecture 6",
+    "topic": "Cross-browser Testing & Data/Keyword Driven Frameworks",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is Cross-browser testing?",
+        "options": [
+          "A process to check if the application works on different hardware only",
+          "A quality assurance process to check if a web-based application works as intended across multiple browsers and devices",
+          "A method to test internet connection speed",
+          "A technique to validate database consistency"
+        ],
+        "correct_answer": "A quality assurance process to check if a web-based application works as intended across multiple browsers and devices"
+      },
+      {
+        "id": 2,
+        "question": "Why is cross-browser testing important?",
+        "options": [
+          "Because all browsers render HTML, CSS, and JavaScript in the exact same way",
+          "To ensure the website looks and behaves as intended on different browsers since vendors have unique interpretations of Web Standards",
+          "To increase the website loading speed",
+          "To reduce the cost of hosting"
+        ],
+        "correct_answer": "To ensure the website looks and behaves as intended on different browsers since vendors have unique interpretations of Web Standards"
+      },
+      {
+        "id": 3,
+        "question": "Which of the following is NOT typically part of a Cross-Browser Testing Checklist? [cite: 31-44]",
+        "options": [
+          "CSS and HTML validation",
+          "Page validations with JavaScript enabled/disabled",
+          "Database schema validation",
+          "Page layout in different resolutions"
+        ],
+        "correct_answer": "Database schema validation"
+      },
+      {
+        "id": 4,
+        "question": "What is BrowserStack?",
+        "options": [
+          "A local server for testing",
+          "A cloud-based testing tool for cross-browser testing of web and mobile applications",
+          "A browser extension for blocking ads",
+          "A database management tool"
+        ],
+        "correct_answer": "A cloud-based testing tool for cross-browser testing of web and mobile applications"
+      },
+      {
+        "id": 5,
+        "question": "Which command is used to set the BrowserStack username environment variable on Windows? [cite: 60]",
+        "options": [
+          "export BROWSERSTACK_USERNAME",
+          "setx BROWSERSTACK_USERNAME \"value\"",
+          "echo BROWSERSTACK_USERNAME",
+          "env set BROWSERSTACK_USERNAME"
+        ],
+        "correct_answer": "setx BROWSERSTACK_USERNAME \"value\""
+      },
+      {
+        "id": 6,
+        "question": "What is a Data Driven Framework?",
+        "options": [
+          "A method where data is hardcoded in the test script",
+          "A method of separating data sets from the test case to easily modify data without changing code",
+          "A framework that only uses databases",
+          "A manual testing process"
+        ],
+        "correct_answer": "A method of separating data sets from the test case to easily modify data without changing code"
+      },
+      {
+        "id": 7,
+        "question": "From which external sources does Data Driven Testing typically fetch data?",
+        "options": [
+          "Only from SQL databases",
+          "Excel, .csv, .xml files, or database tables",
+          "Word documents only",
+          "The browser cache"
+        ],
+        "correct_answer": "Excel, .csv, .xml files, or database tables"
+      },
+      {
+        "id": 8,
+        "question": "What is a major advantage of Data-Driven Testing (DDT) regarding regression testing?",
+        "options": [
+          "It eliminates the need for regression testing",
+          "It allows regression tests to run from end-to-end workflow for multiple data sets, increasing efficiency",
+          "It makes regression testing slower",
+          "It requires manual intervention for every data set"
+        ],
+        "correct_answer": "It allows regression tests to run from end-to-end workflow for multiple data sets, increasing efficiency"
+      },
+      {
+        "id": 9,
+        "question": "How does DDT enable clarity in testing? [cite: 104-105]",
+        "options": [
+          "By combining test scripts and data into one file",
+          "By allowing clear logical separation of test scripts from the test data",
+          "By writing all tests in a single long script",
+          "By removing the need for documentation"
+        ],
+        "correct_answer": "By allowing clear logical separation of test scripts from the test data"
+      },
+      {
+        "id": 10,
+        "question": "Which of the following is a disadvantage of Data-Driven Testing?",
+        "options": [
+          "It is impossible to debug",
+          "The test code written to read data can be slightly complicated",
+          "It cannot handle positive and negative data",
+          "It decreases documentation requirements"
+        ],
+        "correct_answer": "The test code written to read data can be slightly complicated"
+      },
+      {
+        "id": 11,
+        "question": "Why can debugging be tough for a tester in a DDT environment? [cite: 116-117]",
+        "options": [
+          "Because tools don't support debugging",
+          "Due to potential lack of exposure to programming languages to identify logical errors",
+          "Because there are no error messages",
+          "Because the data is encrypted"
+        ],
+        "correct_answer": "Due to potential lack of exposure to programming languages to identify logical errors"
+      },
+      {
+        "id": 12,
+        "question": "What is a best practice regarding 'Testing with Positive and Negative Data' in DDT?",
+        "options": [
+          "Only test positive scenarios to save time",
+          "Test cases should cover both positives and negatives (exceptions) that a system should handle",
+          "Only test negative scenarios",
+          "Ignore data validation"
+        ],
+        "correct_answer": "Test cases should cover both positives and negatives (exceptions) that a system should handle"
+      },
+      {
+        "id": 13,
+        "question": "Why is it important to avoid manual interventions (Checkpoints) in automated scripts? [cite: 130-131]",
+        "options": [
+          "Manual triggers are the most efficient way to test",
+          "Because a manual trigger is never an efficient way to test a navigational flow",
+          "It increases the cost of testing tools",
+          "It makes the script too short"
+        ],
+        "correct_answer": "Because a manual trigger is never an efficient way to test a navigational flow"
+      },
+      {
+        "id": 14,
+        "question": "How is test data typically stored in Data-Driven Testing?",
+        "options": [
+          "In a columnar distribution or table structure mimicking a spreadsheet",
+          "In unstructured text files",
+          "Inside the Java class file only",
+          "In the browser's local storage"
+        ],
+        "correct_answer": "In a columnar distribution or table structure mimicking a spreadsheet"
+      },
+      {
+        "id": 15,
+        "question": "What is Keyword Driven Test Automation also known as?",
+        "options": [
+          "Object Oriented Testing",
+          "Table Driven Test Automation or Action Word Based Testing",
+          "Scriptless Testing",
+          "Manual Testing"
+        ],
+        "correct_answer": "Table Driven Test Automation or Action Word Based Testing"
+      },
+      {
+        "id": 16,
+        "question": "In Keyword Driven Development, what does 'Action on the Test Object' refer to?",
+        "options": [
+          "The name of the web page",
+          "An action item performed on the object (e.g., Click, Open Browser)",
+          "The test result",
+          "The developer's name"
+        ],
+        "correct_answer": "An action item performed on the object (e.g., Click, Open Browser)"
+      },
+      {
+        "id": 17,
+        "question": "What is the purpose of the 'Object Repository' property file in KDT resources?",
+        "options": [
+          "To store the test results",
+          "To store the html elements of the web application",
+          "To store the list of keywords",
+          "To store the user passwords"
+        ],
+        "correct_answer": "To store the html elements of the web application"
+      },
+      {
+        "id": 18,
+        "question": "What is a 'Keyword Function Library' in a Keyword Driven Framework?",
+        "options": [
+          "A library of books about testing",
+          "A file maintained to call functions that mimic the working of an action",
+          "A database of user emails",
+          "A list of all possible errors"
+        ],
+        "correct_answer": "A file maintained to call functions that mimic the working of an action"
+      },
+      {
+        "id": 19,
+        "question": "What is a key feature of Keyword-Driven Development regarding code?",
+        "options": [
+          "Code is never reused",
+          "Reusable Code: Independent modules and their test files can be reused for similar future modules",
+          "Code is extremely complex and hard to maintain",
+          "It requires a specific programming language"
+        ],
+        "correct_answer": "Reusable Code: Independent modules and their test files can be reused for similar future modules"
+      },
+      {
+        "id": 20,
+        "question": "What is the main difference between Data Driven Testing (DDT) and Keyword Driven Testing (KDT)? [cite: 187-190]",
+        "options": [
+          "DDT uses keywords; KDT uses data files",
+          "DDT runs scripts with different data variables; KDT uses keywords to represent action items to drive a script",
+          "DDT is manual; KDT is automated",
+          "There is no difference"
+        ],
+        "correct_answer": "DDT runs scripts with different data variables; KDT uses keywords to represent action items to drive a script"
+      },
+      {
+        "id": 21,
+        "question": "What is Hybrid-Driven Development (HDD)?",
+        "options": [
+          "A framework that only works on hybrid cars",
+          "A combination of both Data-Driven and Keyword-Driven frameworks",
+          "A mix of manual and automated testing",
+          "A framework using both Java and Python"
+        ],
+        "correct_answer": "A combination of both Data-Driven and Keyword-Driven frameworks"
+      },
+      {
+        "id": 22,
+        "question": "In a Hybrid Driven Framework, how are keywords and test data handled?",
+        "options": [
+          "They are hardcoded in the script",
+          "They are externalized (Keywords in Java class, data in properties/excel files)",
+          "They are ignored",
+          "They are stored in the browser"
+        ],
+        "correct_answer": "They are externalized (Keywords in Java class, data in properties/excel files)"
+      },
+      {
+        "id": 23,
+        "question": "What is Apache POI?",
+        "options": [
+          "A web server",
+          "A popular Java API that allows programmers to create, modify, and display MS Office files",
+          "A testing framework for PHP",
+          "A database engine"
+        ],
+        "correct_answer": "A popular Java API that allows programmers to create, modify, and display MS Office files"
+      },
+      {
+        "id": 24,
+        "question": "Apache POI is developed by which organization?",
+        "options": [
+          "Microsoft",
+          "Google",
+          "Apache Software Foundation",
+          "Oracle"
+        ],
+        "correct_answer": "Apache Software Foundation"
+      },
+      {
+        "id": 25,
+        "question": "What is Apache MetaModel?",
+        "options": [
+          "A model for fashion shows",
+          "A library that encapsulates differences and enhances capabilities of different datastores",
+          "A tool for creating metadata",
+          "A replacement for SQL"
+        ],
+        "correct_answer": "A library that encapsulates differences and enhances capabilities of different datastores"
+      },
+      {
+        "id": 26,
+        "question": "Which of the following is a key concept of Apache MetaModel? [cite: 220-223]",
+        "options": [
+          "DataContext",
+          "WebDriver",
+          "PageFactory",
+          "TestNG"
+        ],
+        "correct_answer": "DataContext"
+      },
+      {
+        "id": 27,
+        "question": "In Keyword Driven Testing, what does the 'Data Sheet' excel file store?",
+        "options": [
+          "The HTML elements",
+          "The data value needed by the object to perform an action item",
+          "The list of all employees",
+          "The source code of the application"
+        ],
+        "correct_answer": "The data value needed by the object to perform an action item"
+      },
+      {
+        "id": 28,
+        "question": "What is the 'Execution Engine' in KDT?",
+        "options": [
+          "The physical server running the test",
+          "A test script that drives the test from the Excel sheet, linking functions and properties",
+          "The browser engine (like V8)",
+          "The compiler"
+        ],
+        "correct_answer": "A test script that drives the test from the Excel sheet, linking functions and properties"
+      },
+      {
+        "id": 29,
+        "question": "DDT reduces duplication of what?",
+        "options": [
+          "Developers",
+          "Test scripts, variables, and data inputs",
+          "Bugs",
+          "Hardware resources"
+        ],
+        "correct_answer": "Test scripts, variables, and data inputs"
+      },
+      {
+        "id": 30,
+        "question": "What does 'Driving Dynamic Assertions' mean in the context of DDT best practices?",
+        "options": [
+          "Removing all assertions",
+          "Using automated scripts that can augment assertions to include what was previously tested in current lines",
+          "Manually checking every result",
+          "Using static text for validation"
+        ],
+        "correct_answer": "Using automated scripts that can augment assertions to include what was previously tested in current lines"
+      }
+    ]
+  }

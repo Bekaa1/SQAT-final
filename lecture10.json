@@ -1,0 +1,391 @@
+{
+    "subject": "Software Quality Assurance and Testing - Lecture 10",
+    "topic": "Microservices Testing, Mocks/Stubs, WireMock, and CI/CD",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is a Microservices Architecture?",
+        "options": [
+          "A monolithic application design",
+          "An application built as a collection of independent services",
+          "A database management system",
+          "A front-end development framework"
+        ],
+        "correct_answer": "An application built as a collection of independent services"
+      },
+      {
+        "id": 2,
+        "question": "How do microservices typically communicate with each other?",
+        "options": [
+          "Through shared memory",
+          "Through direct database access",
+          "Using Application Programming Interfaces (APIs)",
+          "Via manual file transfer"
+        ],
+        "correct_answer": "Using Application Programming Interfaces (APIs)"
+      },
+      {
+        "id": 3,
+        "question": "Which of the following is NOT listed as a type of Microservices Testing in the lecture? [cite: 6]",
+        "options": [
+          "Unit Testing",
+          "Contract Testing",
+          "Beta Testing",
+          "End-To-End Testing"
+        ],
+        "correct_answer": "Beta Testing"
+      },
+      {
+        "id": 4,
+        "question": "What is the primary goal of Unit Testing?",
+        "options": [
+          "To validate the performance of each component (or unit) of the software",
+          "To test the entire application workflow",
+          "To verify network configuration",
+          "To test the database connection"
+        ],
+        "correct_answer": "To validate the performance of each component (or unit) of the software"
+      },
+      {
+        "id": 5,
+        "question": "Ideally, who should perform Unit Testing and when?",
+        "options": [
+          "QA team after development",
+          "Developers during the development phase",
+          "End-users during UAT",
+          "Project managers before release"
+        ],
+        "correct_answer": "Developers during the development phase"
+      },
+      {
+        "id": 6,
+        "question": "What does Contract Testing define?",
+        "options": [
+          "The legal agreement between client and vendor",
+          "The results or outputs expected for specific inputs to ensure services can communicate",
+          "The salary of the testers",
+          "The user interface design"
+        ],
+        "correct_answer": "The results or outputs expected for specific inputs to ensure services can communicate"
+      },
+      {
+        "id": 7,
+        "question": "In Contract Testing, how should service dependencies operate?",
+        "options": [
+          "They should be fully functional services",
+          "They should be ignored",
+          "They must operate as stubs that enable a service to function without interacting with other services",
+          "They must be manually tested"
+        ],
+        "correct_answer": "They must operate as stubs that enable a service to function without interacting with other services"
+      },
+      {
+        "id": 8,
+        "question": "What is the goal of Integration Testing in microservices?",
+        "options": [
+          "To test a single unit in isolation",
+          "To verify that microservices collaborate to achieve a joint operation as a subsystem",
+          "To test the UI responsiveness",
+          "To verify the contract between consumer and provider"
+        ],
+        "correct_answer": "To verify that microservices collaborate to achieve a joint operation as a subsystem"
+      },
+      {
+        "id": 9,
+        "question": "What does End-to-End (E2E) Testing verify?",
+        "options": [
+          "That the code is written in Java",
+          "That individual units function correctly",
+          "That the entire application works to achieve its business objectives",
+          "That the database schema is correct"
+        ],
+        "correct_answer": "That the entire application works to achieve its business objectives"
+      },
+      {
+        "id": 10,
+        "question": "Why is End-to-End testing especially important for microservices architecture? [cite: 10]",
+        "options": [
+          "It is faster than unit testing",
+          "It helps ensure there are no gaps between microservices and all work towards achieving their goal",
+          "It requires less code",
+          "It replaces integration testing"
+        ],
+        "correct_answer": "It helps ensure there are no gaps between microservices and all work towards achieving their goal"
+      },
+      {
+        "id": 11,
+        "question": "Which strategy suggests testing high-risk microservices extensively at the beginning of the cycle?",
+        "options": [
+          "Pick the High-Risk Services",
+          "Test Last Strategy",
+          "Low-Risk First Strategy",
+          "Random Testing Strategy"
+        ],
+        "correct_answer": "Pick the High-Risk Services"
+      },
+      {
+        "id": 12,
+        "question": "What is 'Service Virtualization' used for?",
+        "options": [
+          "To increase hardware costs",
+          "To mock out a service to avoid delays caused by pending dependencies",
+          "To visualize the service in a diagram",
+          "To deploy services to the cloud"
+        ],
+        "correct_answer": "To mock out a service to avoid delays caused by pending dependencies"
+      },
+      {
+        "id": 13,
+        "question": "What is an SLA in the context of testing strategies?",
+        "options": [
+          "Software License Agreement",
+          "Service Level Agreement",
+          "System Level Access",
+          "Standard Load Average"
+        ],
+        "correct_answer": "Service Level Agreement"
+      },
+      {
+        "id": 14,
+        "question": "What are Mocks?",
+        "options": [
+          "Real objects used in production",
+          "Objects that store method calls and verify interaction between Java classes",
+          "Database tables",
+          "User interface elements"
+        ],
+        "correct_answer": "Objects that store method calls and verify interaction between Java classes"
+      },
+      {
+        "id": 15,
+        "question": "What type of verification are Mocks generally used for?",
+        "options": [
+          "State verification",
+          "Behavior verification",
+          "Performance verification",
+          "Security verification"
+        ],
+        "correct_answer": "Behavior verification"
+      },
+      {
+        "id": 16,
+        "question": "Which of the following is a mocking framework mentioned in the lecture?",
+        "options": [
+          "Mockito",
+          "Selenium",
+          "Appium",
+          "Cucumber"
+        ],
+        "correct_answer": "Mockito"
+      },
+      {
+        "id": 17,
+        "question": "What are Stubs?",
+        "options": [
+          "Objects that hold predefined data and use it to give responses during tests",
+          "Objects that verify behavior",
+          "Dynamic wrappers for dependencies",
+          "The real objects used in the application"
+        ],
+        "correct_answer": "Objects that hold predefined data and use it to give responses during tests"
+      },
+      {
+        "id": 18,
+        "question": "What type of verification are Stubs mainly used for?",
+        "options": [
+          "Behavior verification",
+          "State verification",
+          "Integration verification",
+          "System verification"
+        ],
+        "correct_answer": "State verification"
+      },
+      {
+        "id": 19,
+        "question": "What is the key characteristic of a Stub's output?",
+        "options": [
+          "It is random every time",
+          "It always returns the predefined output regardless of the input",
+          "It depends on the system clock",
+          "It is calculated dynamically"
+        ],
+        "correct_answer": "It always returns the predefined output regardless of the input"
+      },
+      {
+        "id": 20,
+        "question": "What are Spies?",
+        "options": [
+          "Secret agents",
+          "Fully mock objects",
+          "Partially mock objects that wrap the real object",
+          "Database connections"
+        ],
+        "correct_answer": "Partially mock objects that wrap the real object"
+      },
+      {
+        "id": 21,
+        "question": "When are Spies useful? [cite: 17]",
+        "options": [
+          "When testing small classes",
+          "When we have a huge class and want to mock only certain methods",
+          "When we want to test the database",
+          "When we want to test the UI"
+        ],
+        "correct_answer": "When we have a huge class and want to mock only certain methods"
+      },
+      {
+        "id": 22,
+        "question": "What is WireMock?",
+        "options": [
+          "A wireframing tool",
+          "An HTTP mock server for stubbing and verification",
+          "A unit testing framework",
+          "A CI/CD tool"
+        ],
+        "correct_answer": "An HTTP mock server for stubbing and verification"
+      },
+      {
+        "id": 23,
+        "question": "Which of the following is a feature of WireMock?",
+        "options": [
+          "Compiling Java code",
+          "Record/playback of interactions with other APIs",
+          "Managing database schemas",
+          "Designing user interfaces"
+        ],
+        "correct_answer": "Record/playback of interactions with other APIs"
+      },
+      {
+        "id": 24,
+        "question": "How can WireMock be used?",
+        "options": [
+          "Only as a standalone process",
+          "Only as a library",
+          "As a library by any JVM application or as a standalone process",
+          "Only on a remote server"
+        ],
+        "correct_answer": "As a library by any JVM application or as a standalone process"
+      },
+      {
+        "id": 25,
+        "question": "WireMock's features are accessible via which interfaces?",
+        "options": [
+          "REST (JSON) interface and Java API",
+          "SOAP interface only",
+          "Command line only",
+          "Graphical User Interface only"
+        ],
+        "correct_answer": "REST (JSON) interface and Java API"
+      },
+      {
+        "id": 26,
+        "question": "What capability does WireMock provide regarding faults?",
+        "options": [
+          "It fixes faults automatically",
+          "It allows injection of faults and delays",
+          "It prevents faults from happening",
+          "It ignores all faults"
+        ],
+        "correct_answer": "It allows injection of faults and delays"
+      },
+      {
+        "id": 27,
+        "question": "What is Jenkins?",
+        "options": [
+          "A database",
+          "An open-source automation tool written in Java for Continuous Integration",
+          "A web browser",
+          "A programming language"
+        ],
+        "correct_answer": "An open-source automation tool written in Java for Continuous Integration"
+      },
+      {
+        "id": 28,
+        "question": "What is the primary purpose of Jenkins?",
+        "options": [
+          "To write code",
+          "To build and test software projects continuously",
+          "To manage project requirements",
+          "To design software architecture"
+        ],
+        "correct_answer": "To build and test software projects continuously"
+      },
+      {
+        "id": 29,
+        "question": "How does Jenkins accelerate the software development process? [cite: 27]",
+        "options": [
+          "By hiring more developers",
+          "Through automation of build, test, and deploy processes",
+          "By reducing the number of tests",
+          "By writing code automatically"
+        ],
+        "correct_answer": "Through automation of build, test, and deploy processes"
+      },
+      {
+        "id": 30,
+        "question": "What is the default scope for the WireMock dependency in Maven?",
+        "options": [
+          "compile",
+          "runtime",
+          "test",
+          "provided"
+        ],
+        "correct_answer": "test"
+      },
+      {
+        "id": 31,
+        "question": "What does a Spy do if a method is NOT stubbed?",
+        "options": [
+          "It returns null",
+          "It throws an exception",
+          "It calls the real method behavior",
+          "It returns a random value"
+        ],
+        "correct_answer": "It calls the real method behavior"
+      },
+      {
+        "id": 32,
+        "question": "Which object resembles a real object with the minimum number of methods needed for a test?",
+        "options": [
+          "Mock",
+          "Stub",
+          "Spy",
+          "Controller"
+        ],
+        "correct_answer": "Stub"
+      },
+      {
+        "id": 33,
+        "question": "What is the term for checking the correct methods and paths applied to objects in Mocking?",
+        "options": [
+          "State verification",
+          "Behavior verification",
+          "Path verification",
+          "Logic verification"
+        ],
+        "correct_answer": "Behavior verification"
+      },
+      {
+        "id": 34,
+        "question": "Which Mockito method is used to create a spy object?",
+        "options": [
+          "mock()",
+          "create()",
+          "spy()",
+          "stub()"
+        ],
+        "correct_answer": "spy()"
+      },
+      {
+        "id": 35,
+        "question": "In the context of CI/CD, what allows Jenkins to integrate with many technologies?",
+        "options": [
+          "Its database",
+          "Its plugins",
+          "Its operating system",
+          "Its user interface"
+        ],
+        "correct_answer": "Its plugins"
+      }
+    ]
+  }

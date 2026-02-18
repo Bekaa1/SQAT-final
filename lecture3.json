@@ -1,0 +1,358 @@
+{
+  "subject": "Software Quality Assurance and Testing - Lecture 3",
+  "topic": "UI Test Automation with Selenium WebDriver",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following best describes Selenium? [cite: 492]",
+      "options": [
+        "A database management tool",
+        "A powerful tool for controlling web browsers through programs",
+        "A tool for testing Windows desktop applications only",
+        "A programming language for web development"
+      ],
+      "correct_answer": "A powerful tool for controlling web browsers through programs"
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is NOT one of the four major components of Selenium? [cite: 494]",
+      "options": [
+        "Selenium IDE",
+        "Selenium RC",
+        "Selenium Server",
+        "Selenium GRID"
+      ],
+      "correct_answer": "Selenium Server"
+    },
+    {
+      "id": 3,
+      "question": "What is Selenium IDE primarily used for? [cite: 499]",
+      "options": [
+        "Running tests on remote machines",
+        "Writing complex automation scripts in Java",
+        "Recording, editing, and debugging functional tests",
+        "Managing browser drivers"
+      ],
+      "correct_answer": "Recording, editing, and debugging functional tests"
+    },
+    {
+      "id": 4,
+      "question": "Which Selenium component acts as a server that accepts commands via HTTP and is now considered legacy? [cite: 500]",
+      "options": [
+        "Selenium WebDriver",
+        "Selenium RC (Remote Control)",
+        "Selenium Grid",
+        "Selenium IDE"
+      ],
+      "correct_answer": "Selenium RC (Remote Control)"
+    },
+    {
+      "id": 5,
+      "question": "How does Selenium WebDriver differ from Selenium RC? [cite: 502-503]",
+      "options": [
+        "It uses a JavaScript injection technique",
+        "It sends commands directly to the browser via a browser-specific driver",
+        "It requires a server to be running before execution",
+        "It only supports Firefox"
+      ],
+      "correct_answer": "It sends commands directly to the browser via a browser-specific driver"
+    },
+    {
+      "id": 6,
+      "question": "What is the function of Selenium Grid? [cite: 505]",
+      "options": [
+        "To record user actions",
+        "To allow tests to use web browser instances running on remote machines",
+        "To compile Java code",
+        "To generate test reports"
+      ],
+      "correct_answer": "To allow tests to use web browser instances running on remote machines"
+    },
+    {
+      "id": 7,
+      "question": "In the Selenium WebDriver Architecture, what protocol is used for communication between language bindings and browser drivers? [cite: 514, 516]",
+      "options": [
+        "TCP/IP",
+        "JSON Wire Protocol over HTTP",
+        "FTP",
+        "SOAP"
+      ],
+      "correct_answer": "JSON Wire Protocol over HTTP"
+    },
+    {
+      "id": 8,
+      "question": "Which interface is at the top of the Selenium Browser Driver Class Hierarchy? [cite: 518]",
+      "options": [
+        "WebDriver",
+        "RemoteWebDriver",
+        "SearchContext",
+        "ChromeDriver"
+      ],
+      "correct_answer": "SearchContext"
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is an example of a headless browser supported by Selenium? [cite: 525]",
+      "options": [
+        "Google Chrome",
+        "Mozilla Firefox",
+        "HTMLUnit browser",
+        "Opera"
+      ],
+      "correct_answer": "HTMLUnit browser"
+    },
+    {
+      "id": 10,
+      "question": "Which of the following is a major advantage of Selenium WebDriver regarding test execution time? [cite: 530]",
+      "options": [
+        "It runs on a supercomputer",
+        "It supports parallel test execution",
+        "It skips validation steps",
+        "It uses a faster internet connection"
+      ],
+      "correct_answer": "It supports parallel test execution"
+    },
+    {
+      "id": 11,
+      "question": "Does Selenium WebDriver require a server to be started before executing test scripts? [cite: 533]",
+      "options": [
+        "Yes, always",
+        "No, it is not required",
+        "Only for Chrome",
+        "Only for IE"
+      ],
+      "correct_answer": "No, it is not required"
+    },
+    {
+      "id": 12,
+      "question": "Which of the following is a limitation of Selenium WebDriver? [cite: 536-537]",
+      "options": [
+        "It cannot test web-based applications",
+        "It cannot test Windows-based desktop applications",
+        "It does not support Java",
+        "It requires a paid license"
+      ],
+      "correct_answer": "It cannot test Windows-based desktop applications"
+    },
+    {
+      "id": 13,
+      "question": "What third-party tool is suggested for testing Windows-based applications alongside Selenium? [cite: 538]",
+      "options": [
+        "Sikuli",
+        "AutoIt",
+        "TestNG",
+        "JUnit"
+      ],
+      "correct_answer": "AutoIt"
+    },
+    {
+      "id": 14,
+      "question": "How can image-based testing be performed with Selenium? [cite: 540]",
+      "options": [
+        "It is built-in to WebDriver",
+        "By integrating Selenium with Sikuli",
+        "By using XPath",
+        "By using CSS Selectors"
+      ],
+      "correct_answer": "By integrating Selenium with Sikuli"
+    },
+    {
+      "id": 15,
+      "question": "Does Selenium WebDriver automatically generate test result files? [cite: 541]",
+      "options": [
+        "Yes, in PDF format",
+        "Yes, in HTML format",
+        "No, it needs integration with frameworks like TestNG or JUnit",
+        "Yes, but only in the paid version"
+      ],
+      "correct_answer": "No, it needs integration with frameworks like TestNG or JUnit"
+    },
+    {
+      "id": 16,
+      "question": "Which elements cannot be automated using Selenium WebDriver? [cite: 543]",
+      "options": [
+        "Drop-down lists",
+        "Radio buttons",
+        "CAPTCHA, reCAPTCHA, and bar-code readers",
+        "Checkboxes"
+      ],
+      "correct_answer": "CAPTCHA, reCAPTCHA, and bar-code readers"
+    },
+    {
+      "id": 17,
+      "question": "What is the recommended way to manage browser drivers automatically in the code? [cite: 579-581]",
+      "options": [
+        "Manually downloading executables",
+        "Using WebDriverManager",
+        "Using Selenium IDE",
+        "Using Windows Update"
+      ],
+      "correct_answer": "Using WebDriverManager"
+    },
+    {
+      "id": 18,
+      "question": "Which locator strategies locate elements whose visible text matches the search value? [cite: 596]",
+      "options": [
+        "id and class name",
+        "link text and partial link text",
+        "css selector and xpath",
+        "tag name and name"
+      ],
+      "correct_answer": "link text and partial link text"
+    },
+    {
+      "id": 19,
+      "question": "What is a key difference between XPath and CSS Selectors regarding traversal flow? [cite: 598-599]",
+      "options": [
+        "CSS allows bidirectional flow",
+        "XPath allows bidirectional flow (parent to child and child to parent)",
+        "Both allow only one directional flow",
+        "XPath allows only parent to child flow"
+      ],
+      "correct_answer": "XPath allows bidirectional flow (parent to child and child to parent)"
+    },
+    {
+      "id": 20,
+      "question": "Which is generally faster in terms of performance? [cite: 600]",
+      "options": [
+        "XPath",
+        "CSS Selector",
+        "Both are equal",
+        "It depends on the browser version"
+      ],
+      "correct_answer": "CSS Selector"
+    },
+    {
+      "id": 21,
+      "question": "Which feature does XPath have that CSS Selectors do not? [cite: 601-602]",
+      "options": [
+        "Identification by class name",
+        "Identification by ID",
+        "Identification by visible text using text() function",
+        "Traversal from parent to child"
+      ],
+      "correct_answer": "Identification by visible text using text() function"
+    },
+    {
+      "id": 22,
+      "question": "In a customized CSS selector, what symbol represents the 'id' attribute? [cite: 604]",
+      "options": [
+        ". (dot)",
+        "# (hash)",
+        "@ (at symbol)",
+        "// (double slash)"
+      ],
+      "correct_answer": "# (hash)"
+    },
+    {
+      "id": 23,
+      "question": "In a customized CSS selector, what symbol represents the 'class' attribute? [cite: 605]",
+      "options": [
+        ". (dot)",
+        "# (hash)",
+        "$ (dollar)",
+        "* (asterisk)"
+      ],
+      "correct_answer": ". (dot)"
+    },
+    {
+      "id": 24,
+      "question": "Which of the following is a valid XPath expression format? [cite: 607]",
+      "options": [
+        "tagname[attribute = 'value']",
+        "//tagname[@attribute = 'value']",
+        "#tagname.attribute",
+        "tagname > attribute"
+      ],
+      "correct_answer": "//tagname[@attribute = 'value']"
+    },
+    {
+      "id": 25,
+      "question": "What are the two types of XPath? [cite: 608]",
+      "options": [
+        "Static and Dynamic",
+        "Absolute and Relative",
+        "Internal and External",
+        "Fast and Slow"
+      ],
+      "correct_answer": "Absolute and Relative"
+    },
+    {
+      "id": 26,
+      "question": "What characterizes a Dynamic Table in HTML? [cite: 613]",
+      "options": [
+        "Data is static and fixed",
+        "Number of rows and columns are NOT fixed",
+        "It contains images only",
+        "It cannot be automated"
+      ],
+      "correct_answer": "Number of rows and columns are NOT fixed"
+    },
+    {
+      "id": 27,
+      "question": "Which class is used to launch the Chrome browser in Selenium WebDriver? [cite: 589]",
+      "options": [
+        "FirefoxDriver",
+        "EdgeDriver",
+        "ChromeDriver",
+        "SafariDriver"
+      ],
+      "correct_answer": "ChromeDriver"
+    },
+    {
+      "id": 28,
+      "question": "What method is used to navigate to a specific URL in WebDriver? [cite: 595]",
+      "options": [
+        "driver.navigate()",
+        "driver.goTo()",
+        "driver.get(\"url\")",
+        "driver.open(\"url\")"
+      ],
+      "correct_answer": "driver.get(\"url\")"
+    },
+    {
+      "id": 29,
+      "question": "In the Selenium Driver class hierarchy, RemoteWebDriver implements which interface? [cite: 518]",
+      "options": [
+        "SearchContext",
+        "ChromeDriver",
+        "WebDriver",
+        "JavaBinding"
+      ],
+      "correct_answer": "WebDriver"
+    },
+    {
+      "id": 30,
+      "question": "Which tool enables the integration of Selenium with existing unit test frameworks to create automated tests? [cite: 501]",
+      "options": [
+        "Selenium IDE",
+        "Selenium RC",
+        "Selenium Grid",
+        "Apache POI"
+      ],
+      "correct_answer": "Selenium RC"
+    },
+    {
+      "id": 31,
+      "question": "What file is used in Maven to manage dependencies like `selenium-java`? [cite: 546]",
+      "options": [
+        "build.gradle",
+        "pom.xml",
+        "selenium.config",
+        "package.json"
+      ],
+      "correct_answer": "pom.xml"
+    },
+    {
+      "id": 32,
+      "question": "Which locator strategy locates elements matching a CSS selector? [cite: 596]",
+      "options": [
+        "xpath",
+        "class name",
+        "css selector",
+        "tag name"
+      ],
+      "correct_answer": "css selector"
+    }
+  ]
+}

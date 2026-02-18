@@ -1,0 +1,391 @@
+{
+  "subject": "Software Quality Assurance and Testing - Lecture 5",
+  "topic": "TestNG Framework",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does TestNG stand for?",
+      "options": [
+        "Test New Generation",
+        "Testing New Guide",
+        "Test Next Generation",
+        "Technical Next Generation"
+      ],
+      "correct_answer": "Test Next Generation"
+    },
+    {
+      "id": 2,
+      "question": "Which framework inspired TestNG?",
+      "options": [
+        "NUnit",
+        "JUnit",
+        "PyTest",
+        "Mocha"
+      ],
+      "correct_answer": "JUnit"
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is NOT a feature of TestNG? [cite: 2004-2006]",
+      "options": [
+        "Grouping and sequencing",
+        "Detailed HTML reports",
+        "Built-in browser driver management",
+        "Parametrization"
+      ],
+      "correct_answer": "Built-in browser driver management"
+    },
+    {
+      "id": 4,
+      "question": "Which annotation runs before every test method?",
+      "options": [
+        "@BeforeClass",
+        "@BeforeTest",
+        "@BeforeMethod",
+        "@BeforeSuite"
+      ],
+      "correct_answer": "@BeforeMethod"
+    },
+    {
+      "id": 5,
+      "question": "Which annotation runs once before all tests in a specific suite?",
+      "options": [
+        "@BeforeClass",
+        "@BeforeTest",
+        "@BeforeMethod",
+        "@BeforeSuite"
+      ],
+      "correct_answer": "@BeforeSuite"
+    },
+    {
+      "id": 6,
+      "question": "What does the `@Test(enabled = false)` attribute do? [cite: 2043]",
+      "options": [
+        "It prioritizes the test",
+        "It skips the test execution",
+        "It runs the test multiple times",
+        "It marks the test as failed"
+      ],
+      "correct_answer": "It skips the test execution"
+    },
+    {
+      "id": 7,
+      "question": "Which attribute is used to run a test method multiple times? [cite: 2043]",
+      "options": [
+        "loopCount",
+        "invocationCount",
+        "repeat",
+        "threadPoolSize"
+      ],
+      "correct_answer": "invocationCount"
+    },
+    {
+      "id": 8,
+      "question": "What is the purpose of the `priority` attribute in `@Test`? [cite: 2043]",
+      "options": [
+        "To define the severity of the defect",
+        "To determine the order of execution (lower priorities run first)",
+        "To set the timeout for the test",
+        "To group tests together"
+      ],
+      "correct_answer": "To determine the order of execution (lower priorities run first)"
+    },
+    {
+      "id": 9,
+      "question": "Where are the default TestNG reports generated? [cite: 2049]",
+      "options": [
+        "In the `target` folder",
+        "In the `src` folder",
+        "In the `test-output` folder",
+        "In the `logs` folder"
+      ],
+      "correct_answer": "In the `test-output` folder"
+    },
+    {
+      "id": 10,
+      "question": "Which file contains an index-like structure of different parts of the report (failed tests, passed tests, etc.)? [cite: 2056]",
+      "options": [
+        "emailable-report.html",
+        "testng.xml",
+        "index.html",
+        "summary.html"
+      ],
+      "correct_answer": "index.html"
+    },
+    {
+      "id": 11,
+      "question": "Which built-in class in TestNG is used to log messages into the reports? [cite: 2062]",
+      "options": [
+        "Logger",
+        "Reporter",
+        "Printer",
+        "Writer"
+      ],
+      "correct_answer": "Reporter"
+    },
+    {
+      "id": 12,
+      "question": "What is the correct syntax to log a message using the Reporter class?",
+      "options": [
+        "System.out.println(\"message\");",
+        "Logger.log(\"message\");",
+        "Reporter.log(\"message\");",
+        "Reporter.print(\"message\");"
+      ],
+      "correct_answer": "Reporter.log(\"message\");"
+    },
+    {
+      "id": 13,
+      "question": "How are parameters passed to a TestNG test method usually defined? [cite: 2087]",
+      "options": [
+        "In a properties file",
+        "In the TestNG XML file",
+        "Hardcoded in the Java class",
+        "In the command line"
+      ],
+      "correct_answer": "In the TestNG XML file"
+    },
+    {
+      "id": 14,
+      "question": "Which annotation is used to accept parameters in a test method? [cite: 2086]",
+      "options": [
+        "@DataProvider",
+        "@Parameters",
+        "@Args",
+        "@Values"
+      ],
+      "correct_answer": "@Parameters"
+    },
+    {
+      "id": 15,
+      "question": "What is the purpose of Assertions in TestNG? [cite: 2090]",
+      "options": [
+        "To log messages to the console",
+        "To verify that the expected result matches the actual result",
+        "To run tests in parallel",
+        "To generate HTML reports"
+      ],
+      "correct_answer": "To verify that the expected result matches the actual result"
+    },
+    {
+      "id": 16,
+      "question": "What happens if an assertion fails in a TestNG test case? [cite: 2091]",
+      "options": [
+        "The test continues to the next line",
+        "The test is marked as passed",
+        "The test is marked as failed overall",
+        "The test is skipped"
+      ],
+      "correct_answer": "The test is marked as failed overall"
+    },
+    {
+      "id": 17,
+      "question": "Which of the following is an advantage of Parallel Testing? [cite: 2107]",
+      "options": [
+        "It increases the overall execution time",
+        "It reduces the overall execution time",
+        "It removes the need for assertions",
+        "It guarantees sequential execution"
+      ],
+      "correct_answer": "It reduces the overall execution time"
+    },
+    {
+      "id": 18,
+      "question": "What is a disadvantage of Parallel Testing? [cite: 2110]",
+      "options": [
+        "It cannot be done with Selenium",
+        "It fails on dependent modules that rely on each other",
+        "It consumes less resources",
+        "It is slower than serial execution"
+      ],
+      "correct_answer": "It fails on dependent modules that rely on each other"
+    },
+    {
+      "id": 19,
+      "question": "In the `testng.xml` file, which attribute is used to define the number of threads for parallel execution?",
+      "options": [
+        "thread-count",
+        "parallel-count",
+        "max-threads",
+        "thread-pool"
+      ],
+      "correct_answer": "thread-count"
+    },
+    {
+      "id": 20,
+      "question": "What are Listeners in Selenium/TestNG? [cite: 2120]",
+      "options": [
+        "Background processes that slow down tests",
+        "Interfaces that modify the default behavior of the system (logs, reports)",
+        "Methods to listen to audio files",
+        "Classes that replace the WebDriver"
+      ],
+      "correct_answer": "Interfaces that modify the default behavior of the system (logs, reports)"
+    },
+    {
+      "id": 21,
+      "question": "Which TestNG listener method is called on the failure of any test? [cite: 2133]",
+      "options": [
+        "onTestSuccess",
+        "onTestFailure",
+        "onTestSkipped",
+        "onStart"
+      ],
+      "correct_answer": "onTestFailure"
+    },
+    {
+      "id": 22,
+      "question": "What is the main difference between WebDriver Listener and TestNG Listener? [cite: 2137]",
+      "options": [
+        "WebDriver Listener handles reporting; TestNG Listener handles events",
+        "WebDriver Listener captures browser events; TestNG Listener generates reports/logs for test status",
+        "They are the same thing",
+        "TestNG Listener only works with JUnit"
+      ],
+      "correct_answer": "WebDriver Listener captures browser events; TestNG Listener generates reports/logs for test status"
+    },
+    {
+      "id": 23,
+      "question": "What is Log4j? [cite: 2140]",
+      "options": [
+        "A testing framework replacing TestNG",
+        "A logging facade/implementation library",
+        "A browser driver",
+        "A build tool"
+      ],
+      "correct_answer": "A logging facade/implementation library"
+    },
+    {
+      "id": 24,
+      "question": "Which element is the root of a Log4j 2 configuration file? [cite: 2150]",
+      "options": [
+        "Appenders",
+        "Configuration",
+        "Loggers",
+        "Root"
+      ],
+      "correct_answer": "Configuration"
+    },
+    {
+      "id": 25,
+      "question": "What does the `Appenders` element do in Log4j configuration? [cite: 2151]",
+      "options": [
+        "It defines the log level",
+        "It configures where the logs are outputted (e.g., console, file)",
+        "It starts the test execution",
+        "It defines the test parameters"
+      ],
+      "correct_answer": "It configures where the logs are outputted (e.g., console, file)"
+    },
+    {
+      "id": 26,
+      "question": "What is ExtentReports? [cite: 2158]",
+      "options": [
+        "A closed-source tool for manual testing",
+        "An open-source reporting library that generates interactive HTML reports",
+        "A database for storing test results",
+        "A plugin for Eclipse"
+      ],
+      "correct_answer": "An open-source reporting library that generates interactive HTML reports"
+    },
+    {
+      "id": 27,
+      "question": "Which file extension is used for the default TestNG emailable report? [cite: 2051]",
+      "options": [
+        ".xml",
+        ".txt",
+        ".html",
+        ".json"
+      ],
+      "correct_answer": ".html"
+    },
+    {
+      "id": 28,
+      "question": "Which annotation is used for data-driven testing in TestNG? [cite: 2020]",
+      "options": [
+        "@Data",
+        "@DataProvider",
+        "@DataSource",
+        "@Parameters"
+      ],
+      "correct_answer": "@DataProvider"
+    },
+    {
+      "id": 29,
+      "question": "What is the `threadPoolSize` attribute used for in `@Test`? [cite: 2043]",
+      "options": [
+        "To set the memory limit",
+        "To specify the size of the thread pool for the method when invocationCount is used",
+        "To count the number of threads in the CPU",
+        "To define the priority of threads"
+      ],
+      "correct_answer": "To specify the size of the thread pool for the method when invocationCount is used"
+    },
+    {
+      "id": 30,
+      "question": "Which listener method is called when a test is skipped? [cite: 2134]",
+      "options": [
+        "onTestSuccess",
+        "onTestFailure",
+        "onTestSkipped",
+        "onFinish"
+      ],
+      "correct_answer": "onTestSkipped"
+    },
+    {
+      "id": 31,
+      "question": "What is `EventFiringWebDriver` used for? [cite: 2126]",
+      "options": [
+        "To fire employees",
+        "To implement the WebDriver interface and catch WebDriver events",
+        "To start the browser in headless mode",
+        "To run tests in parallel"
+      ],
+      "correct_answer": "To implement the WebDriver interface and catch WebDriver events"
+    },
+    {
+      "id": 32,
+      "question": "Which reporting class allows adding screenshots to the report? [cite: 2163]",
+      "options": [
+        "Reporter",
+        "Logger",
+        "ExtentTest",
+        "Console"
+      ],
+      "correct_answer": "ExtentTest"
+    },
+    {
+      "id": 33,
+      "question": "What does `@BeforeGroups` do? [cite: 2036]",
+      "options": [
+        "Runs after all groups are finished",
+        "Runs shortly before the first test method belonging to any of the specified groups",
+        "Runs before every method in the group",
+        "Runs only once per suite"
+      ],
+      "correct_answer": "Runs shortly before the first test method belonging to any of the specified groups"
+    },
+    {
+      "id": 34,
+      "question": "Which annotation guarantees a method runs after all test methods in the current class? [cite: 2040]",
+      "options": [
+        "@AfterMethod",
+        "@AfterTest",
+        "@AfterClass",
+        "@AfterSuite"
+      ],
+      "correct_answer": "@AfterClass"
+    },
+    {
+      "id": 35,
+      "question": "What is the benefit of high-level logging using TestNG Reporter Log? [cite: 2080]",
+      "options": [
+        "It logs every single step and variable",
+        "It logs only critical steps that the tester wants to see",
+        "It is slower than Log4j",
+        "It requires complex configuration"
+      ],
+      "correct_answer": "It logs only critical steps that the tester wants to see"
+    }
+  ]
+}

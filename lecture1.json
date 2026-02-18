@@ -1,0 +1,391 @@
+{
+    "subject": "Software Quality Assurance and Testing - Lecture 1",
+    "topic": "Fundamentals of Software Testing & Bug Life Cycle",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary definition of Software Testing?",
+        "options": [
+          "The process of writing code for the application",
+          "The process of executing a program with the intent of finding errors",
+          "The process of designing the user interface",
+          "The process of fixing bugs found by users"
+        ],
+        "correct_answer": "The process of executing a program with the intent of finding errors"
+      },
+      {
+        "id": 2,
+        "question": "Which of the following statements about testing limitations is true? [cite: 4]",
+        "options": [
+          "Testing can prove the absence of bugs",
+          "It is possible to completely test any non-trivial system",
+          "Testing can only show the presence of bugs, not their absence",
+          "Automated testing finds all bugs"
+        ],
+        "correct_answer": "Testing can only show the presence of bugs, not their absence"
+      },
+      {
+        "id": 3,
+        "question": "What is the difference between Verification and Validation? [cite: 8]",
+        "options": [
+          "Verification asks 'Are we building the right product?'; Validation asks 'Are we building the product right?'",
+          "Verification asks 'Are we building the product right?'; Validation asks 'Are we building the right product?'",
+          "Verification is manual; Validation is automated",
+          "Verification is done by users; Validation is done by developers"
+        ],
+        "correct_answer": "Verification asks 'Are we building the product right?'; Validation asks 'Are we building the right product?'"
+      },
+      {
+        "id": 4,
+        "question": "Which fault handling technique involves 'Reviews' and 'Configuration Management'? [cite: 5]",
+        "options": [
+          "Fault Tolerance",
+          "Fault Detection",
+          "Fault Avoidance",
+          "Fault Correction"
+        ],
+        "correct_answer": "Fault Avoidance"
+      },
+      {
+        "id": 5,
+        "question": "What is Black-Box Testing? [cite: 18]",
+        "options": [
+          "Testing with full knowledge of the internal structure and code",
+          "Testing where the internal structure/design/implementation is not known to the tester",
+          "Testing performed only by developers",
+          "Testing focused on database schemas"
+        ],
+        "correct_answer": "Testing where the internal structure/design/implementation is not known to the tester"
+      },
+      {
+        "id": 6,
+        "question": "What is White-Box Testing? [cite: 21]",
+        "options": [
+          "Testing based on analysis of the internal structure of the component or system",
+          "Testing based solely on requirements documents",
+          "Testing performed by end-users",
+          "Testing without looking at the code"
+        ],
+        "correct_answer": "Testing based on analysis of the internal structure of the component or system"
+      },
+      {
+        "id": 7,
+        "question": "Which of the following is an example of Functional Testing? [cite: 13]",
+        "options": [
+          "Performance Testing",
+          "Unit Testing",
+          "Stress Testing",
+          "Usability Testing"
+        ],
+        "correct_answer": "Unit Testing"
+      },
+      {
+        "id": 8,
+        "question": "Which of the following is an example of Non-Functional Testing? [cite: 15]",
+        "options": [
+          "Integration Testing",
+          "System Testing",
+          "Performance Testing",
+          "Acceptance Testing"
+        ],
+        "correct_answer": "Performance Testing"
+      },
+      {
+        "id": 9,
+        "question": "What is 'Smoke Testing'?",
+        "options": [
+          "Testing the application under heavy load",
+          "Detailed testing of a specific feature",
+          "A subset of test cases to ensure the most critical functions work (General Health Checkup)",
+          "Testing done by the developer before checking in code"
+        ],
+        "correct_answer": "A subset of test cases to ensure the most critical functions work (General Health Checkup)"
+      },
+      {
+        "id": 10,
+        "question": "When is 'Sanity Testing' performed?",
+        "options": [
+          "Before the build is released to QA",
+          "After receiving a software build with minor changes in code or functionality",
+          "During the initial design phase",
+          "Only when the system crashes"
+        ],
+        "correct_answer": "After receiving a software build with minor changes in code or functionality"
+      },
+      {
+        "id": 11,
+        "question": "What is the main goal of 'Regression Testing'?",
+        "options": [
+          "To check if the new code has broken existing functionality",
+          "To test the user interface design",
+          "To verify the requirements documentation",
+          "To check the installation process"
+        ],
+        "correct_answer": "To check if the new code has broken existing functionality"
+      },
+      {
+        "id": 12,
+        "question": "Which testing type is also known as 'Glass Box' or 'Clear Box' testing? [cite: 21]",
+        "options": [
+          "Black-Box Testing",
+          "White-Box Testing",
+          "Grey-Box Testing",
+          "Functional Testing"
+        ],
+        "correct_answer": "White-Box Testing"
+      },
+      {
+        "id": 13,
+        "question": "What is a 'Defect' or 'Bug'? [cite: 55]",
+        "options": [
+          "A mistake made by the developer",
+          "The mechanical or algorithmic cause of an error",
+          "A deviation of the observed behavior from the specified behavior",
+          "A misunderstanding of requirements"
+        ],
+        "correct_answer": "The mechanical or algorithmic cause of an error"
+      },
+      {
+        "id": 14,
+        "question": "What is an 'Error' in testing terminology? [cite: 55]",
+        "options": [
+          "The system is in a state such that further processing will lead to a failure",
+          "A deviation from specification",
+          "A physical hardware fault",
+          "A spelling mistake in documentation"
+        ],
+        "correct_answer": "The system is in a state such that further processing will lead to a failure"
+      },
+      {
+        "id": 15,
+        "question": "What is a 'Failure'? [cite: 55]",
+        "options": [
+          "A human action that produces an incorrect result",
+          "Any deviation of the observed behavior from the specified behavior",
+          "A bug in the code",
+          "A warning from the compiler"
+        ],
+        "correct_answer": "Any deviation of the observed behavior from the specified behavior"
+      },
+      {
+        "id": 16,
+        "question": "According to the lecture, who tests the software 'gently' and is driven by 'delivery'? [cite: 57]",
+        "options": [
+          "The Independent Tester",
+          "The Client",
+          "The Developer",
+          "The Manager"
+        ],
+        "correct_answer": "The Developer"
+      },
+      {
+        "id": 17,
+        "question": "What drives the 'Independent Tester'? [cite: 57]",
+        "options": [
+          "Delivery deadlines",
+          "Understanding the system architecture",
+          "Quality and attempting to break the system",
+          "Writing code"
+        ],
+        "correct_answer": "Quality and attempting to break the system"
+      },
+      {
+        "id": 18,
+        "question": "What is the cost of fixing a bug found in the Maintenance phase compared to the Requirements phase? [cite: 10]",
+        "options": [
+          "It is cheaper",
+          "It is the same cost",
+          "It is significantly more expensive (up to 100x)",
+          "It is free"
+        ],
+        "correct_answer": "It is significantly more expensive (up to 100x)"
+      },
+      {
+        "id": 19,
+        "question": "Which of the following is NOT a level of testing? [cite: 11]",
+        "options": [
+          "Unit Testing",
+          "Integration Testing",
+          "System Testing",
+          "Marketing Testing"
+        ],
+        "correct_answer": "Marketing Testing"
+      },
+      {
+        "id": 20,
+        "question": "What is 'Static Testing'? [cite: 17]",
+        "options": [
+          "Executing the code",
+          "Testing without executing the program (e.g., reviews, inspections)",
+          "Testing static variables only",
+          "Testing hardware components"
+        ],
+        "correct_answer": "Testing without executing the program (e.g., reviews, inspections)"
+      },
+      {
+        "id": 21,
+        "question": "What does 'Dynamic Testing' involve? [cite: 17]",
+        "options": [
+          "Validating requirements",
+          "Executing the program with input data",
+          "Code walkthroughs",
+          "Reviewing design documents"
+        ],
+        "correct_answer": "Executing the program with input data"
+      },
+      {
+        "id": 22,
+        "question": "In the Bug Life Cycle, what status is assigned when a bug is first logged? [cite: 44]",
+        "options": [
+          "Open",
+          "New",
+          "Assigned",
+          "Verified"
+        ],
+        "correct_answer": "New"
+      },
+      {
+        "id": 23,
+        "question": "What status does a bug get when a developer accepts it and starts working on it? [cite: 44]",
+        "options": [
+          "New",
+          "Open",
+          "Retest",
+          "Closed"
+        ],
+        "correct_answer": "Open"
+      },
+      {
+        "id": 24,
+        "question": "If a developer thinks a reported bug is not a genuine defect, what status might they assign? [cite: 44]",
+        "options": [
+          "Deferred",
+          "Rejected",
+          "Duplicate",
+          "Fixed"
+        ],
+        "correct_answer": "Rejected"
+      },
+      {
+        "id": 25,
+        "question": "What does the 'Deferred' status mean in the Bug Life Cycle? [cite: 44]",
+        "options": [
+          "The bug is fixed but not verified",
+          "The bug is not valid",
+          "The bug is expected to be fixed in the next release (low priority)",
+          "The bug already exists in the database"
+        ],
+        "correct_answer": "The bug is expected to be fixed in the next release (low priority)"
+      },
+      {
+        "id": 26,
+        "question": "Which component of a Bug Report describes 'How to reproduce the bug'? [cite: 49]",
+        "options": [
+          "Bug ID",
+          "Steps to Reproduce",
+          "Summary",
+          "Severity"
+        ],
+        "correct_answer": "Steps to Reproduce"
+      },
+      {
+        "id": 27,
+        "question": "What defines 'Severity' in a bug report? [cite: 52]",
+        "options": [
+          "How quickly the bug must be fixed",
+          "The impact of the bug on the application's functionality",
+          "The complexity of the code",
+          "The time taken to fix the bug"
+        ],
+        "correct_answer": "The impact of the bug on the application's functionality"
+      },
+      {
+        "id": 28,
+        "question": "What defines 'Priority' in a bug report? [cite: 52]",
+        "options": [
+          "The order in which the bug should be fixed",
+          "The damage caused to the system",
+          "The technical difficulty of the fix",
+          "The number of users affected"
+        ],
+        "correct_answer": "The order in which the bug should be fixed"
+      },
+      {
+        "id": 29,
+        "question": "Which of the following is an example of an 'Algorithmic Fault'? [cite: 56]",
+        "options": [
+          "Documentation does not match actual conditions",
+          "Missing initialization or branching errors",
+          "Stress or overload errors",
+          "Mismatch between client needs and server offers"
+        ],
+        "correct_answer": "Missing initialization or branching errors"
+      },
+      {
+        "id": 30,
+        "question": "What type of error includes 'Stress or overload errors'? [cite: 56]",
+        "options": [
+          "Algorithmic Faults",
+          "Mechanical Faults",
+          "Interface Faults",
+          "Capacity or boundary errors"
+        ],
+        "correct_answer": "Capacity or boundary errors"
+      },
+      {
+        "id": 31,
+        "question": "Sanity Testing is a subset of which testing type? [cite: 32]",
+        "options": [
+          "Unit Testing",
+          "Regression Testing",
+          "Integration Testing",
+          "Stress Testing"
+        ],
+        "correct_answer": "Regression Testing"
+      },
+      {
+        "id": 32,
+        "question": "What is the key difference between Smoke and Sanity testing? [cite: 34]",
+        "options": [
+          "Smoke verifies critical functionalities; Sanity verifies specific functionality changes",
+          "Smoke is done by testers; Sanity is done by developers",
+          "Smoke is narrow and deep; Sanity is wide and shallow",
+          "Smoke is done on stable builds; Sanity is done on unstable builds"
+        ],
+        "correct_answer": "Smoke verifies critical functionalities; Sanity verifies specific functionality changes"
+      },
+      {
+        "id": 33,
+        "question": "Which status indicates that the tester has verified the fix and the bug no longer exists? [cite: 44]",
+        "options": [
+          "Retest",
+          "Fixed",
+          "Closed",
+          "Verified"
+        ],
+        "correct_answer": "Closed"
+      },
+      {
+        "id": 34,
+        "question": "What is 'Retest' in the Bug Life Cycle? [cite: 44]",
+        "options": [
+          "The developer is fixing the bug again",
+          "The tester is verifying the fix provided by the developer",
+          "The manager is reviewing the bug",
+          "The bug is sent back to the developer"
+        ],
+        "correct_answer": "The tester is verifying the fix provided by the developer"
+      },
+      {
+        "id": 35,
+        "question": "Which testing type involves checking the system against the Requirements Specification? [cite: 13]",
+        "options": [
+          "White-Box Testing",
+          "System Testing",
+          "Unit Testing",
+          "Integration Testing"
+        ],
+        "correct_answer": "System Testing"
+      }
+    ]
+  }

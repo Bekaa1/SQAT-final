@@ -1,0 +1,358 @@
+{
+    "subject": "Software Quality Assurance and Testing - Lecture 8",
+    "topic": "Behavior Driven Development (BDD) Framework & Cucumber",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What does BDD stand for?",
+        "options": [
+          "Basic Data Development",
+          "Behavior Driven Development",
+          "Business Driven Design",
+          "Binary Data Decryption"
+        ],
+        "correct_answer": "Behavior Driven Development"
+      },
+      {
+        "id": 2,
+        "question": "What is the primary language used to write test scenarios in BDD to make them understandable for non-technical members?",
+        "options": [
+          "Java",
+          "Python",
+          "Simple text language (English)",
+          "SQL"
+        ],
+        "correct_answer": "Simple text language (English)"
+      },
+      {
+        "id": 3,
+        "question": "BDD evolved from which earlier development process?",
+        "options": [
+          "Waterfall Model",
+          "Test Driven Development (TDD)",
+          "Rapid Application Development",
+          "Spiral Model"
+        ],
+        "correct_answer": "Test Driven Development (TDD)"
+      },
+      {
+        "id": 4,
+        "question": "What is Cucumber?",
+        "options": [
+          "A database management tool",
+          "A tool that supports Behavior Driven Development (BDD)",
+          "A programming language like Java",
+          "A continuous integration server"
+        ],
+        "correct_answer": "A tool that supports Behavior Driven Development (BDD)"
+      },
+      {
+        "id": 5,
+        "question": "Which language is used by Cucumber to define test cases?",
+        "options": [
+          "XML",
+          "JSON",
+          "Gherkin",
+          "HTML"
+        ],
+        "correct_answer": "Gherkin"
+      },
+      {
+        "id": 6,
+        "question": "What is the file extension for a Cucumber feature file?",
+        "options": [
+          ".java",
+          ".xml",
+          ".feature",
+          ".gherkin"
+        ],
+        "correct_answer": ".feature"
+      },
+      {
+        "id": 7,
+        "question": "Which Gherkin keyword is used to describe the initial context or precondition (e.g., 'User is on login page')?",
+        "options": [
+          "When",
+          "Then",
+          "Given",
+          "But"
+        ],
+        "correct_answer": "Given"
+      },
+      {
+        "id": 8,
+        "question": "Which Gherkin keyword describes an event or an action (e.g., 'User enters password')?",
+        "options": [
+          "Given",
+          "When",
+          "Then",
+          "Background"
+        ],
+        "correct_answer": "When"
+      },
+      {
+        "id": 9,
+        "question": "Which Gherkin keyword describes the expected outcome or result?",
+        "options": [
+          "Given",
+          "When",
+          "Then",
+          "Feature"
+        ],
+        "correct_answer": "Then"
+      },
+      {
+        "id": 10,
+        "question": "What keyword is used to group multiple scenarios?",
+        "options": [
+          "Feature",
+          "Background",
+          "Scenario Outline",
+          "Examples"
+        ],
+        "correct_answer": "Feature"
+      },
+      {
+        "id": 11,
+        "question": "Which keyword is used to execute the same scenario multiple times with different sets of data?",
+        "options": [
+          "Scenario",
+          "Background",
+          "Scenario Outline",
+          "But"
+        ],
+        "correct_answer": "Scenario Outline"
+      },
+      {
+        "id": 12,
+        "question": "What must accompany a 'Scenario Outline' to provide the data sets?",
+        "options": [
+          "Variables",
+          "Examples",
+          "Data Tables",
+          "Hooks"
+        ],
+        "correct_answer": "Examples"
+      },
+      {
+        "id": 13,
+        "question": "Which keyword is used to define steps that run before each scenario in a feature file?",
+        "options": [
+          "Before",
+          "Precondition",
+          "Background",
+          "Given"
+        ],
+        "correct_answer": "Background"
+      },
+      {
+        "id": 14,
+        "question": "What symbol is used to separate columns in a Data Table in Gherkin? [cite: 31]",
+        "options": [
+          "Comma (,)",
+          "Pipe (|)",
+          "Colon (:)",
+          "Tab"
+        ],
+        "correct_answer": "Pipe (|)"
+      },
+      {
+        "id": 15,
+        "question": "Where is the actual code execution logic written to map Gherkin steps? [cite: 22]",
+        "options": [
+          "Feature File",
+          "TestRunner Class",
+          "Step Definition File",
+          "pom.xml"
+        ],
+        "correct_answer": "Step Definition File"
+      },
+      {
+        "id": 16,
+        "question": "Which annotation is used in Cucumber to execute code before every scenario (Hooks)? [cite: 26]",
+        "options": [
+          "@BeforeClass",
+          "@Before",
+          "@Setup",
+          "@Start"
+        ],
+        "correct_answer": "@Before"
+      },
+      {
+        "id": 17,
+        "question": "Which annotation is used to execute code after every scenario?",
+        "options": [
+          "@After",
+          "@TearDown",
+          "@End",
+          "@Post"
+        ],
+        "correct_answer": "@After"
+      },
+      {
+        "id": 18,
+        "question": "What is the purpose of 'Tags' in Cucumber? [cite: 27]",
+        "options": [
+          "To comment out code",
+          "To organize and group scenarios (e.g., @Smoke, @Regression)",
+          "To define variables",
+          "To link to Java classes"
+        ],
+        "correct_answer": "To organize and group scenarios (e.g., @Smoke, @Regression)"
+      },
+      {
+        "id": 19,
+        "question": "What class is used to run the Cucumber feature file and link it with step definitions? [cite: 25]",
+        "options": [
+          "Main Class",
+          "TestRunner Class",
+          "StepDef Class",
+          "GherkinRunner"
+        ],
+        "correct_answer": "TestRunner Class"
+      },
+      {
+        "id": 20,
+        "question": "Which option in the TestRunner class checks if all steps in the feature file have corresponding step definitions without running them? [cite: 25]",
+        "options": [
+          "monochrome",
+          "features",
+          "glue",
+          "dryRun"
+        ],
+        "correct_answer": "dryRun"
+      },
+      {
+        "id": 21,
+        "question": "Which option in the TestRunner class ensures the console output is readable (removes unreadable characters)?",
+        "options": [
+          "dryRun",
+          "monochrome",
+          "strict",
+          "format"
+        ],
+        "correct_answer": "monochrome"
+      },
+      {
+        "id": 22,
+        "question": "Which keyword allows adding a negative condition or an additional step logically different from the previous one? [cite: 17]",
+        "options": [
+          "And",
+          "Then",
+          "But",
+          "When"
+        ],
+        "correct_answer": "But"
+      },
+      {
+        "id": 23,
+        "question": "In a 'Scenario Outline', how are variables represented in the steps? [cite: 20]",
+        "options": [
+          "{variable}",
+          "<variable>",
+          "[variable]",
+          "$variable"
+        ],
+        "correct_answer": "<variable>"
+      },
+      {
+        "id": 24,
+        "question": "What is the main advantage of using 'Background' in a feature file?",
+        "options": [
+          "It runs after every scenario",
+          "It eliminates the need to repeat common steps (like login) in every scenario",
+          "It defines the test data",
+          "It generates the report"
+        ],
+        "correct_answer": "It eliminates the need to repeat common steps (like login) in every scenario"
+      },
+      {
+        "id": 25,
+        "question": "Which keyword is used to join multiple steps of the same type (e.g., multiple Givens or Thens)? [cite: 16]",
+        "options": [
+          "But",
+          "Also",
+          "And",
+          "Plus"
+        ],
+        "correct_answer": "And"
+      },
+      {
+        "id": 26,
+        "question": "What does the 'glue' parameter in the TestRunner class specify? [cite: 25]",
+        "options": [
+          " The path to the feature files",
+          "The path to the step definition files",
+          "The path to the report folder",
+          "The tags to be executed"
+        ],
+        "correct_answer": "The path to the step definition files"
+      },
+      {
+        "id": 27,
+        "question": "Which of the following is NOT an advantage of the BDD framework? [cite: 33-35]",
+        "options": [
+          "Coverage of User Stories",
+          "Reusability of code",
+          "Requires highly technical skills for everyone to understand",
+          "Parameterization in Feature File"
+        ],
+        "correct_answer": "Requires highly technical skills for everyone to understand"
+      },
+      {
+        "id": 28,
+        "question": "What symbol is used for comments in a Gherkin feature file? [cite: 19]",
+        "options": [
+          "//",
+          "/* */",
+          "#",
+          "--"
+        ],
+        "correct_answer": "#"
+      },
+      {
+        "id": 29,
+        "question": "Cucumber supports integration with which Continuous Integration tool mentioned in the lecture? [cite: 36]",
+        "options": [
+          "CircleCI",
+          "Jenkins",
+          "Travis CI",
+          "TeamCity"
+        ],
+        "correct_answer": "Jenkins"
+      },
+      {
+        "id": 30,
+        "question": "What is the correct syntax for the 'Scenario' keyword?",
+        "options": [
+          "Scenario: [Description]",
+          "Scenario [Description]",
+          "@Scenario [Description]",
+          "Scenario -> [Description]"
+        ],
+        "correct_answer": "Scenario: [Description]"
+      },
+      {
+        "id": 31,
+        "question": "In the TDD cycle, what is the first step?",
+        "options": [
+          "Write a passing test",
+          "Refactor code",
+          "Write a failing test",
+          "Write production code"
+        ],
+        "correct_answer": "Write a failing test"
+      },
+      {
+        "id": 32,
+        "question": "Which file contains the mapping between the Gherkin steps and the Java methods?",
+        "options": [
+          "Feature File",
+          "Step Definition File",
+          "Runner File",
+          "Config File"
+        ],
+        "correct_answer": "Step Definition File"
+      }
+    ]
+  }

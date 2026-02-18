@@ -1,0 +1,336 @@
+{
+    "subject": "Software Quality Assurance and Testing - Lecture 9",
+    "topic": "API Testing, REST, SOAP, and Tools",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What does API stand for?",
+        "options": [
+          "Application Programming Interface",
+          "Automated Programming Interface",
+          "Application Process Integration",
+          "Automated Process Interaction"
+        ],
+        "correct_answer": "Application Programming Interface"
+      },
+      {
+        "id": 2,
+        "question": "Where does the API layer sit in software application development?",
+        "options": [
+          "Between the database and the server",
+          "Between the presentation (UI) layer and the database layer",
+          "Inside the user interface",
+          "Within the database itself"
+        ],
+        "correct_answer": "Between the presentation (UI) layer and the database layer"
+      },
+      {
+        "id": 3,
+        "question": "Which of the following is a benefit of API testing regarding language independence?",
+        "options": [
+          "It only supports Java",
+          "Data is exchanged via XML and JSON, so any language can be used for automation",
+          "It requires C# for all tests",
+          "It uses binary formats only"
+        ],
+        "correct_answer": "Data is exchanged via XML and JSON, so any language can be used for automation"
+      },
+      {
+        "id": 4,
+        "question": "How does API testing contribute to faster releases?",
+        "options": [
+          "It skips testing altogether",
+          "It executes tests up to eight hours faster compared to UI testing",
+          "It removes the need for developers",
+          "It automates the UI design"
+        ],
+        "correct_answer": "It executes tests up to eight hours faster compared to UI testing"
+      },
+      {
+        "id": 5,
+        "question": "What is 'Fuzz testing' in the context of API testing?",
+        "options": [
+          "Testing the user interface design",
+          "Forcibly inputting huge amounts of random data (noise) to create negative behavior",
+          "Testing the documentation",
+          "Verifying the correct product was built"
+        ],
+        "correct_answer": "Forcibly inputting huge amounts of random data (noise) to create negative behavior"
+      },
+      {
+        "id": 6,
+        "question": "Which type of testing is attacked by a person with limited knowledge of the API to analyze the attack vector from an outside perspective?",
+        "options": [
+          "Load testing",
+          "Penetration testing",
+          "Functional testing",
+          "Reliability testing"
+        ],
+        "correct_answer": "Penetration testing"
+      },
+      {
+        "id": 7,
+        "question": "What does CRUD stand for?",
+        "options": [
+          "Create, Read, Update, Delete",
+          "Connect, Read, Use, Destroy",
+          "Create, Run, Update, Done",
+          "Call, Return, Update, Delete"
+        ],
+        "correct_answer": "Create, Read, Update, Delete"
+      },
+      {
+        "id": 8,
+        "question": "Which HTTP method is used to implement a CREATE operation?",
+        "options": [
+          "GET",
+          "POST",
+          "PUT",
+          "DELETE"
+        ],
+        "correct_answer": "POST"
+      },
+      {
+        "id": 9,
+        "question": "Which HTTP method is used to implement a READ operation?",
+        "options": [
+          "GET",
+          "POST",
+          "PATCH",
+          "DELETE"
+        ],
+        "correct_answer": "GET"
+      },
+      {
+        "id": 10,
+        "question": "What is the difference between PUT and PATCH for the UPDATE operation?",
+        "options": [
+          "PUT updates the entire entry; PATCH updates only part of the entry",
+          "PATCH updates the entire entry; PUT updates only part of the entry",
+          "There is no difference",
+          "PUT is for creating, PATCH is for deleting"
+        ],
+        "correct_answer": "PUT updates the entire entry; PATCH updates only part of the entry"
+      },
+      {
+        "id": 11,
+        "question": "Which SQL command corresponds to the READ operation?",
+        "options": [
+          "INSERT",
+          "SELECT",
+          "UPDATE",
+          "DELETE"
+        ],
+        "correct_answer": "SELECT"
+      },
+      {
+        "id": 12,
+        "question": "Which category of HTTP status codes indicates 'Success'?",
+        "options": [
+          "1xx",
+          "2xx",
+          "4xx",
+          "5xx"
+        ],
+        "correct_answer": "2xx"
+      },
+      {
+        "id": 13,
+        "question": "What does a 4xx HTTP status code indicate?",
+        "options": [
+          "Server Error",
+          "Redirection",
+          "Client Error",
+          "Informational"
+        ],
+        "correct_answer": "Client Error"
+      },
+      {
+        "id": 14,
+        "question": "What does a 5xx HTTP status code indicate?",
+        "options": [
+          "Success",
+          "Client Error",
+          "Server Error",
+          "Redirection"
+        ],
+        "correct_answer": "Server Error"
+      },
+      {
+        "id": 15,
+        "question": "Unlike SOAP, REST doesn't have to use XML. What other formats can REST use?",
+        "options": [
+          "Only HTML",
+          "CSV, JSON, and RSS",
+          "Binary only",
+          "Standardized SOAP messages"
+        ],
+        "correct_answer": "CSV, JSON, and RSS"
+      },
+      {
+        "id": 16,
+        "question": "Which of the following is an advantage of REST over SOAP?",
+        "options": [
+          "It requires expensive tools",
+          "It uses XML for all messages",
+          "It requires extensive processing",
+          "It is faster (no extensive processing required) and uses smaller message formats"
+        ],
+        "correct_answer": "It is faster (no extensive processing required) and uses smaller message formats"
+      },
+      {
+        "id": 17,
+        "question": "SOAP relies exclusively on which format to provide messaging services?",
+        "options": [
+          "JSON",
+          "XML",
+          "CSV",
+          "YAML"
+        ],
+        "correct_answer": "XML"
+      },
+      {
+        "id": 18,
+        "question": "Which of the following is an advantage of SOAP compared to REST?",
+        "options": [
+          "It is language, platform, and transport independent (REST requires HTTP)",
+          "It is faster than REST",
+          "It uses JSON which is lightweight",
+          "It has a smaller learning curve"
+        ],
+        "correct_answer": "It is language, platform, and transport independent (REST requires HTTP)"
+      },
+      {
+        "id": 19,
+        "question": "RestAssured is a library used to test REST APIs using which programming language?",
+        "options": [
+          "Python",
+          "Java",
+          "C#",
+          "Ruby"
+        ],
+        "correct_answer": "Java"
+      },
+      {
+        "id": 20,
+        "question": "What is 'Load testing' in the context of API testing?",
+        "options": [
+          "Ensuring the API performs exactly as supposed to",
+          "Checking consistent results between platforms",
+          "Seeing how many calls an API can handle",
+          "Validating encryption methods"
+        ],
+        "correct_answer": "Seeing how many calls an API can handle"
+      },
+      {
+        "id": 21,
+        "question": "Which testing type ensures the API produces consistent results and the connection between platforms is constant?",
+        "options": [
+          "Security testing",
+          "Reliability testing",
+          "Fuzz testing",
+          "Validation testing"
+        ],
+        "correct_answer": "Reliability testing"
+      },
+      {
+        "id": 22,
+        "question": "In a NoSQL database like MongoDB, which method is used for the CREATE operation?",
+        "options": [
+          "add()",
+          "insert()",
+          "create()",
+          "new()"
+        ],
+        "correct_answer": "insert()"
+      },
+      {
+        "id": 23,
+        "question": "Which protocol did Microsoft originally develop SOAP to replace?",
+        "options": [
+          "HTTP and FTP",
+          "DCOM and CORBA",
+          "TCP and IP",
+          "SMTP and IMAP"
+        ],
+        "correct_answer": "DCOM and CORBA"
+      },
+      {
+        "id": 24,
+        "question": "What is a characteristic of 'Validation testing' in APIs?",
+        "options": [
+          "It focuses on whether the correct product was built and if the API behavior is correct",
+          "It focuses only on security flaws",
+          "It inputs random noise into the system",
+          "It tests only the load capacity"
+        ],
+        "correct_answer": "It focuses on whether the correct product was built and if the API behavior is correct"
+      },
+      {
+        "id": 25,
+        "question": "What allows RestAssured to integrate well with project builds?",
+        "options": [
+          "Integration with Maven",
+          "Integration with Photoshop",
+          "It is a standalone executable",
+          "It requires a paid license"
+        ],
+        "correct_answer": "Integration with Maven"
+      },
+      {
+        "id": 26,
+        "question": "Which HTTP status code range indicates 'Redirection'?",
+        "options": [
+          "1xx",
+          "2xx",
+          "3xx",
+          "4xx"
+        ],
+        "correct_answer": "3xx"
+      },
+      {
+        "id": 27,
+        "question": "Which of the following is NOT a standard HTTP method used in REST?",
+        "options": [
+          "GET",
+          "POST",
+          "CHECK",
+          "DELETE"
+        ],
+        "correct_answer": "CHECK"
+      },
+      {
+        "id": 28,
+        "question": "What is 'Security testing' often grouped with?",
+        "options": [
+          "Load testing and Unit testing",
+          "Penetration testing and Fuzz testing",
+          "UI testing and UX testing",
+          "Functional testing and Validation testing"
+        ],
+        "correct_answer": "Penetration testing and Fuzz testing"
+      },
+      {
+        "id": 29,
+        "question": "Which tool is mentioned for API documentation and UI visualization?",
+        "options": [
+          "JMeter",
+          "Swagger UI",
+          "Selenium",
+          "Appium"
+        ],
+        "correct_answer": "Swagger UI"
+      },
+      {
+        "id": 30,
+        "question": "What does 'GUI-independent' benefit of API testing imply?",
+        "options": [
+          "API testing can only be done after the UI is ready",
+          "API testing can be performed prior to GUI testing, allowing early feedback",
+          "API testing requires a graphical user interface",
+          "API testing tests the GUI elements"
+        ],
+        "correct_answer": "API testing can be performed prior to GUI testing, allowing early feedback"
+      }
+    ]
+  }

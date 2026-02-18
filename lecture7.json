@@ -1,0 +1,380 @@
+{
+    "subject": "Software Quality Assurance and Testing - Lecture 7",
+    "topic": "Database Testing and Performance Testing",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary definition of Database Testing?",
+        "options": [
+          "Testing the user interface design",
+          "A type of software testing that checks the schema, tables, triggers, and data integrity of the database",
+          "Testing the network speed",
+          "Writing code for the application"
+        ],
+        "correct_answer": "A type of software testing that checks the schema, tables, triggers, and data integrity of the database"
+      },
+      {
+        "id": 2,
+        "question": "Which acronym describes the four properties of a database transaction ensuring data reliability?",
+        "options": [
+          "BASE",
+          "CRUD",
+          "ACID",
+          "SOLID"
+        ],
+        "correct_answer": "ACID"
+      },
+      {
+        "id": 3,
+        "question": "In ACID properties, what does 'Atomicity' imply?",
+        "options": [
+          "Data remains consistent after transaction",
+          "Transactions are isolated from each other",
+          "All-or-Nothing: operations are either completed entirely or not at all",
+          "Data is permanently saved"
+        ],
+        "correct_answer": "All-or-Nothing: operations are either completed entirely or not at all"
+      },
+      {
+        "id": 4,
+        "question": "Which ACID property ensures that the database remains consistent before and after the transaction?",
+        "options": [
+          "Atomicity",
+          "Consistency",
+          "Isolation",
+          "Durability"
+        ],
+        "correct_answer": "Consistency"
+      },
+      {
+        "id": 5,
+        "question": "What does 'Isolation' mean in the context of database transactions?",
+        "options": [
+          "Data is stored in a separate server",
+          "Multiple transactions can occur concurrently without impacting one another",
+          "Transactions are executed one by one",
+          "The system is isolated from the internet"
+        ],
+        "correct_answer": "Multiple transactions can occur concurrently without impacting one another"
+      },
+      {
+        "id": 6,
+        "question": "What is 'Data Mapping' in database testing focused on?",
+        "options": [
+          "Drawing diagrams of the database",
+          "Verifying data that passes back and forth between the application and the backend database",
+          "Mapping the network topology",
+          "Creating new tables"
+        ],
+        "correct_answer": "Verifying data that passes back and forth between the application and the backend database"
+      },
+      {
+        "id": 7,
+        "question": "What is Structural Database Testing?",
+        "options": [
+          "Testing the user flow",
+          "Validating elements inside the data repository (tables, stored procedures) not directly manipulated by end-users",
+          "Testing the physical structure of the server",
+          "Load testing the database"
+        ],
+        "correct_answer": "Validating elements inside the data repository (tables, stored procedures) not directly manipulated by end-users"
+      },
+      {
+        "id": 8,
+        "question": "Which type of testing validates whether the mapping formats of tables/views/columns are compatible with the user interface?",
+        "options": [
+          "Load Testing",
+          "Schema Testing (Mapping Testing)",
+          "Security Testing",
+          "Stress Testing"
+        ],
+        "correct_answer": "Schema Testing (Mapping Testing)"
+      },
+      {
+        "id": 9,
+        "question": "Which of the following is checked during Stored Procedures Testing?",
+        "options": [
+          "Network latency",
+          "Coding standard conventions and exception handling",
+          "User interface colors",
+          "Browser compatibility"
+        ],
+        "correct_answer": "Coding standard conventions and exception handling"
+      },
+      {
+        "id": 10,
+        "question": "What is the main goal of Functional Database Testing?",
+        "options": [
+          "To validate functional requirements from the end-user's perspective regarding database transactions",
+          "To check the internal structure of stored procedures",
+          "To test the maximum load the database can handle",
+          "To migrate data to a new system"
+        ],
+        "correct_answer": "To validate functional requirements from the end-user's perspective regarding database transactions"
+      },
+      {
+        "id": 11,
+        "question": "Which of the following falls under Non-Functional Database Testing?",
+        "options": [
+          "Schema Testing",
+          "Trigger Testing",
+          "Load Testing and Stress Testing",
+          "Data Mapping"
+        ],
+        "correct_answer": "Load Testing and Stress Testing"
+      },
+      {
+        "id": 12,
+        "question": "What does JDBC stand for?",
+        "options": [
+          "Java Data Base Connection",
+          "Java Database Connectivity",
+          "Joint Database Connector",
+          "Java Data Business Connectivity"
+        ],
+        "correct_answer": "Java Database Connectivity"
+      },
+      {
+        "id": 13,
+        "question": "Which Java class is used to establish a connection in JDBC?",
+        "options": [
+          "Statement",
+          "ResultSet",
+          "DriverManager",
+          "SQLException"
+        ],
+        "correct_answer": "DriverManager"
+      },
+      {
+        "id": 14,
+        "question": "What does ETL stand for?",
+        "options": [
+          "Extract Transform Load",
+          "Enter Test Log",
+          "Evaluate Test Loop",
+          "Extract Transfer Link"
+        ],
+        "correct_answer": "Extract Transform Load"
+      },
+      {
+        "id": 15,
+        "question": "What is the purpose of the 'Transform' phase in ETL?",
+        "options": [
+          "To extract data from the source",
+          "To load data into the data warehouse",
+          "To apply functions to conform data to a standard schema (cleanse, resolve conflicts)",
+          "To delete all data"
+        ],
+        "correct_answer": "To apply functions to conform data to a standard schema (cleanse, resolve conflicts)"
+      },
+      {
+        "id": 16,
+        "question": "In ETL testing, what is a 'Completeness Issue' check?",
+        "options": [
+          "Ensuring all expected data is loaded into the target table (comparing record counts)",
+          "Checking for spelling errors",
+          "Checking date formats",
+          "Verifying the primary key"
+        ],
+        "correct_answer": "Ensuring all expected data is loaded into the target table (comparing record counts)"
+      },
+      {
+        "id": 17,
+        "question": "What is Database Migration Testing?",
+        "options": [
+          "Moving the server to a new room",
+          "Verification process of migrating a legacy system to a new system ensuring data integrity",
+          "Testing the speed of the database",
+          "Creating a backup of the database"
+        ],
+        "correct_answer": "Verification process of migrating a legacy system to a new system ensuring data integrity"
+      },
+      {
+        "id": 18,
+        "question": "What is Performance Testing?",
+        "options": [
+          "Checking if the code compiles",
+          "A non-functional technique determining stability, speed, and scalability under workload",
+          "Testing the functionality of buttons",
+          "Checking for syntax errors"
+        ],
+        "correct_answer": "A non-functional technique determining stability, speed, and scalability under workload"
+      },
+      {
+        "id": 19,
+        "question": "Which type of performance testing identifies the breaking point of an application under extreme workloads?",
+        "options": [
+          "Load Testing",
+          "Stress Testing",
+          "Endurance Testing",
+          "Volume Testing"
+        ],
+        "correct_answer": "Stress Testing"
+      },
+      {
+        "id": 20,
+        "question": "What is the objective of Spike Testing?",
+        "options": [
+          "To test reaction to sudden large spikes in user load",
+          "To test behavior over a long period",
+          "To test with large volumes of data",
+          "To test normal user load"
+        ],
+        "correct_answer": "To test reaction to sudden large spikes in user load"
+      },
+      {
+        "id": 21,
+        "question": "What is 'Bottlenecking' in performance testing?",
+        "options": [
+          "The shape of the network cable",
+          "Obstructions in a system (coding errors or hardware) that degrade overall performance",
+          "The startup time of the application",
+          "The maximum memory available"
+        ],
+        "correct_answer": "Obstructions in a system (coding errors or hardware) that degrade overall performance"
+      },
+      {
+        "id": 22,
+        "question": "What is Apache JMeter used for?",
+        "options": [
+          "Writing Java code",
+          "Load testing functional behavior and measuring performance",
+          "Managing project documentation",
+          "Editing images"
+        ],
+        "correct_answer": "Load testing functional behavior and measuring performance"
+      },
+      {
+        "id": 23,
+        "question": "Which of the following is a common performance bottleneck?",
+        "options": [
+          "CPU utilization",
+          "User interface color",
+          "Code comments",
+          "Variable names"
+        ],
+        "correct_answer": "CPU utilization"
+      },
+      {
+        "id": 24,
+        "question": "What is the purpose of 'Endurance Testing'?",
+        "options": [
+          "To check performance under sudden spikes",
+          "To ensure software handles expected load over a long period of time",
+          "To check the maximum limit of the database",
+          "To verify data integrity"
+        ],
+        "correct_answer": "To ensure software handles expected load over a long period of time"
+      },
+      {
+        "id": 25,
+        "question": "Which tool is described as a cloud-based load testing tool that empowers teams to record & instantly playback load tests?",
+        "options": [
+          "JMeter",
+          "LoadNinja",
+          "HP LoadRunner",
+          "HeadSpin"
+        ],
+        "correct_answer": "LoadNinja"
+      },
+      {
+        "id": 26,
+        "question": "In JDBC, which interface is used to execute a SQL query?",
+        "options": [
+          "DriverManager",
+          "Statement",
+          "Connection",
+          "Driver"
+        ],
+        "correct_answer": "Statement"
+      },
+      {
+        "id": 27,
+        "question": "What does 'Durability' in ACID guarantee?",
+        "options": [
+          "Transactions are fast",
+          "Transactions are isolated",
+          "Committed modifications are kept permanently even if the system fails",
+          "All transactions are atomic"
+        ],
+        "correct_answer": "Committed modifications are kept permanently even if the system fails"
+      },
+      {
+        "id": 28,
+        "question": "What is Volume Testing?",
+        "options": [
+          "Testing the sound volume of the app",
+          "Testing the system behavior when a large amount of data is populated in the database",
+          "Testing the number of concurrent users",
+          "Testing the network bandwidth"
+        ],
+        "correct_answer": "Testing the system behavior when a large amount of data is populated in the database"
+      },
+      {
+        "id": 29,
+        "question": "In the context of Login Security testing, what should be verified?",
+        "options": [
+          "That the logo is displayed correctly",
+          "That sensitive data like passwords are encrypted and not stored as plain text",
+          "That the login page loads in 1 millisecond",
+          "That the username field is blue"
+        ],
+        "correct_answer": "That sensitive data like passwords are encrypted and not stored as plain text"
+      },
+      {
+        "id": 30,
+        "question": "Which Java class is used to connect to a MongoDB database in the provided example?",
+        "options": [
+          "DriverManager",
+          "MongoClient",
+          "MongoConnection",
+          "DBConnector"
+        ],
+        "correct_answer": "MongoClient"
+      },
+      {
+        "id": 31,
+        "question": "What is 'Scalability Testing' aimed at?",
+        "options": [
+          "Determining the application's effectiveness in 'scaling up' to support increased user load",
+          "Measuring the size of the application on disk",
+          "Checking if the application works on mobile devices",
+          "Validating the database schema"
+        ],
+        "correct_answer": "Determining the application's effectiveness in 'scaling up' to support increased user load"
+      },
+      {
+        "id": 32,
+        "question": "What implies that 'if any operation is performed on data, it should be performed entirely or not at all'?",
+        "options": [
+          "Consistency",
+          "Isolation",
+          "Atomicity",
+          "Durability"
+        ],
+        "correct_answer": "Atomicity"
+      },
+      {
+        "id": 33,
+        "question": "What is the result of 'Poor scalability'?",
+        "options": [
+          "The application cannot handle the expected number of users",
+          "The application crashes immediately",
+          "The database is deleted",
+          "The UI becomes unresponsive"
+        ],
+        "correct_answer": "The application cannot handle the expected number of users"
+      },
+      {
+        "id": 34,
+        "question": "Which check is part of Data Quality in ETL testing?",
+        "options": [
+          "Check if the server is on",
+          "Duplicate Check (validating unique keys)",
+          "Checking the color of the text",
+          "Verifying the font size"
+        ],
+        "correct_answer": "Duplicate Check (validating unique keys)"
+      }
+    ]
+  }
