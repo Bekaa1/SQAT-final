@@ -21,6 +21,18 @@
       max-width: 900px;
       margin: 0 auto;
     }
+    .top-links a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08);
+    }
+    .top-links a:hover {
+      background: rgba(255,255,255,0.15);
+    }
 
     /* Главный экран — карточки лекций */
     .lectures-view h1 {
@@ -185,9 +197,12 @@
 </head>
 <body>
   <div class="container">
+    <div class="top-links" style="margin-bottom:1rem; display:flex; gap:0.75rem;">
+      <a href="../capstone/">Capstone</a>
+    </div>
     <!-- Выбор лекции -->
     <div class="lectures-view" id="lecturesView">
-      <h1>Выберите лекцию</h1>
+      <h1>SQAT — Выберите лекцию</h1>
       <div class="cards-grid" id="cardsGrid"></div>
     </div>
 

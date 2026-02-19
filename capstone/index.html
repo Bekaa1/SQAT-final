@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лекции — Capstone</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      min-height: 100vh;
+      color: #e8e8e8;
+      padding: 1.5rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    /* Главный экран — карточки лекций */
+    .lectures-view h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 600;
+      font-size: 1.75rem;
+      color: #fff;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1rem;
+      justify-content: center;
+    }
+    .lecture-card {
+      aspect-ratio: 1;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+    }
+    .lecture-card:hover {
+      background: rgba(255,255,255,0.14);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    /* Экран вопросов */
+    .quiz-view {
+      display: none;
+    }
+    .quiz-view.active {
+      display: block;
+    }
+    .progress-wrap {
+      margin-bottom: 1.5rem;
+    }
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.8);
+    }
+    #correctCountText {
+      color: #4caf50;
+      font-weight: 500;
+    }
+    .progress-bar {
+      height: 8px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #e94560, #ff6b6b);
+      border-radius: 4px;
+      transition: width 0.3s ease;
+    }
+    .quiz-title {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 1rem;
+    }
+    .question-block {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .question-text {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 1.25rem;
+    }
+    .options-list {
+      list-style: none;
+    }
+    .options-list li {
+      margin-bottom: 0.75rem;
+    }
+    .options-list label {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      cursor: pointer;
+      padding: 0.6rem 0.8rem;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid transparent;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .options-list label:hover {
+      background: rgba(255,255,255,0.08);
+    }
+    .options-list input {
+      margin-top: 0.2rem;
+      accent-color: #e94560;
+    }
+    .options-list label.correct {
+      border-color: #4caf50;
+      background: rgba(76,175,80,0.18);
+    }
+    .options-list label.wrong {
+      border-color: #f44336;
+      background: rgba(244,67,54,0.18);
+    }
+    .nav-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+    }
+    .nav-buttons button {
+      padding: 0.65rem 1.25rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: opacity 0.2s, transform 0.1s;
+    }
+    .nav-buttons button:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    .nav-buttons button:not(:disabled):hover {
+      transform: scale(1.02);
+    }
+    .btn-back {
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+    }
+    .btn-next {
+      background: linear-gradient(135deg, #e94560, #c73e54);
+      color: #fff;
+    }
+    .btn-back-to-lectures {
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      margin-bottom: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .btn-back-to-lectures:hover {
+      background: rgba(255,255,255,0.18);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Выбор лекции -->
+    <div class="lectures-view" id="lecturesView">
+      <h1>Capstone — Выберите лекцию</h1>
+      <div class="cards-grid" id="cardsGrid"></div>
+    </div>
+
+    <!-- Вопросы лекции -->
+    <div class="quiz-view" id="quizView">
+      <button type="button" class="btn-back-to-lectures" id="btnBackToLectures">← К списку лекций</button>
+      <div class="progress-wrap">
+        <div class="progress-label">
+          <span id="progressText">Вопрос 0 из 0</span>
+          <span id="correctCountText">Правильно: 0 из 0</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+        </div>
+      </div>
+      <div class="quiz-title" id="quizTitle"></div>
+      <div class="question-block">
+        <div class="question-text" id="questionText"></div>
+        <ul class="options-list" id="optionsList"></ul>
+      </div>
+      <div class="nav-buttons">
+        <button type="button" class="btn-back" id="btnBack">Назад</button>
+        <button type="button" class="btn-back" id="btnCheck">Проверить</button>
+        <button type="button" class="btn-next" id="btnNext">Далее</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="lectures-data.js"></script>
+  <script>
+    const LECTURE_COUNT = 10;
+    const lecturesView = document.getElementById('lecturesView');
+    const quizView = document.getElementById('quizView');
+    const cardsGrid = document.getElementById('cardsGrid');
+    const progressText = document.getElementById('progressText');
+    const progressFill = document.getElementById('progressFill');
+    const correctCountText = document.getElementById('correctCountText');
+    const quizTitle = document.getElementById('quizTitle');
+    const questionText = document.getElementById('questionText');
+    const optionsList = document.getElementById('optionsList');
+    const btnBack = document.getElementById('btnBack');
+    const btnNext = document.getElementById('btnNext');
+    const btnCheck = document.getElementById('btnCheck');
+    const btnBackToLectures = document.getElementById('btnBackToLectures');
+
+    let currentLectureData = null;
+    let currentQuestionIndex = 0;
+    let totalQuestions = 0;
+    let correctAnswersSet = new Set();
+
+    function shuffleArray(arr) {
+      const a = [...arr];
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    // Создаём карточки лекций 1–10
+    for (let i = 1; i <= LECTURE_COUNT; i++) {
+      const card = document.createElement('div');
+      card.className = 'lecture-card';
+      card.textContent = 'Лекция ' + i;
+      card.dataset.lecture = i;
+      card.addEventListener('click', () => openLecture(i));
+      cardsGrid.appendChild(card);
+    }
+
+    function openLecture(num) {
+      const data = window.LECTURES_DATA && window.LECTURES_DATA[num];
+      if (!data) {
+        alert('Данные лекции ' + num + ' не найдены.');
+        return;
+      }
+      currentLectureData = data;
+      totalQuestions = (currentLectureData.questions || []).length;
+      currentQuestionIndex = 0;
+      correctAnswersSet = new Set();
+      lecturesView.style.display = 'none';
+      quizView.classList.add('active');
+      quizTitle.textContent = currentLectureData.subject || currentLectureData.topic || 'Лекция ' + num;
+      renderQuestion();
+    }
+
+    function renderQuestion() {
+      const questions = currentLectureData.questions || [];
+      const q = questions[currentQuestionIndex];
+      if (!q) return;
+
+      progressText.textContent = `Вопрос ${currentQuestionIndex + 1} из ${totalQuestions}`;
+      progressFill.style.width = totalQuestions ? ((currentQuestionIndex + 1) / totalQuestions * 100) + '%' : '0%';
+      correctCountText.textContent = `Правильно: ${correctAnswersSet.size} из ${totalQuestions}`;
+
+      questionText.textContent = q.question || '';
+
+      const options = shuffleArray(q.options || []);
+      optionsList.innerHTML = '';
+      const name = 'q' + q.id;
+      options.forEach((opt) => {
+        const li = document.createElement('li');
+        const label = document.createElement('label');
+        const radio = document.createElement('input');
+        radio.type = 'radio';
+        radio.name = name;
+        radio.value = opt;
+        label.appendChild(radio);
+        label.appendChild(document.createTextNode(opt));
+        li.appendChild(label);
+        optionsList.appendChild(li);
+      });
+
+      btnBack.disabled = currentQuestionIndex === 0;
+      btnNext.disabled = currentQuestionIndex === totalQuestions - 1;
+    }
+
+    function checkAnswer() {
+      const questions = currentLectureData && currentLectureData.questions || [];
+      const q = questions[currentQuestionIndex];
+      if (!q) return;
+
+      const radios = optionsList.querySelectorAll('input[type="radio"]');
+      let selected = null;
+      radios.forEach((r) => {
+        if (r.checked) selected = r;
+      });
+
+      if (!selected) {
+        alert('Сначала выберите вариант ответа.');
+        return;
+      }
+
+      optionsList.querySelectorAll('label').forEach((label) => {
+        label.classList.remove('correct', 'wrong');
+      });
+
+      const correctValue = q.correct_answer;
+
+      optionsList.querySelectorAll('input[type="radio"]').forEach((r) => {
+        const label = r.parentElement;
+        if (r.value === correctValue) {
+          label.classList.add('correct');
+        }
+      });
+
+      if (selected.value === correctValue) {
+        correctAnswersSet.add(currentQuestionIndex);
+      } else {
+        selected.parentElement.classList.add('wrong');
+      }
+      correctCountText.textContent = `Правильно: ${correctAnswersSet.size} из ${totalQuestions}`;
+    }
+
+    function goBack() {
+      if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        renderQuestion();
+      }
+    }
+
+    function goNext() {
+      if (currentQuestionIndex < totalQuestions - 1) {
+        currentQuestionIndex++;
+        renderQuestion();
+      }
+    }
+
+    function backToLectures() {
+      quizView.classList.remove('active');
+      lecturesView.style.display = 'block';
+      currentLectureData = null;
+    }
+
+    btnBack.addEventListener('click', goBack);
+    btnNext.addEventListener('click', goNext);
+    btnCheck.addEventListener('click', checkAnswer);
+    btnBackToLectures.addEventListener('click', backToLectures);
+  </script>
+</body>
+</html>

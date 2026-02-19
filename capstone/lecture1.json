@@ -1,0 +1,391 @@
+{
+    "subject": "Capstone - Lecture 1",
+    "topic": "Introduction to Software Engineering, Ethics, and Case Studies",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What does software engineering primarily concern itself with?",
+        "options": [
+          "Building computer hardware",
+          "Theories, methods, and tools for professional software development",
+          "Writing code without methodologies",
+          "Managing IT network infrastructure"
+        ],
+        "correct_answer": "Theories, methods, and tools for professional software development"
+      },
+      {
+        "id": 2,
+        "question": "Which statement about software costs is true according to the presentation?",
+        "options": [
+          "Hardware costs are generally higher than software costs.",
+          "Software costs more to develop than it does to maintain.",
+          "Software costs more to maintain than it does to develop.",
+          "Maintenance costs are usually negligible for systems with a long life."
+        ],
+        "correct_answer": "Software costs more to maintain than it does to develop."
+      },
+      {
+        "id": 3,
+        "question": "What are 'Generic products' in software engineering?",
+        "options": [
+          "Software commissioned by a specific customer to meet their own needs.",
+          "Software developed internally for private use.",
+          "Systems composed of multiple other software systems.",
+          "Stand-alone systems that are marketed and sold to any customer who wishes to buy them."
+        ],
+        "correct_answer": "Stand-alone systems that are marketed and sold to any customer who wishes to buy them."
+      },
+      {
+        "id": 4,
+        "question": "Who owns the specification for 'Customized products'?",
+        "options": [
+          "The software developer",
+          "The customer",
+          "The general public",
+          "The government"
+        ],
+        "correct_answer": "The customer"
+      },
+      {
+        "id": 5,
+        "question": "What are the four fundamental software process activities?",
+        "options": [
+          "Analysis, Design, Coding, Testing",
+          "Planning, Execution, Monitoring, Closing",
+          "Specification, Development, Validation, Evolution",
+          "Requirements, Implementation, Debugging, Deployment"
+        ],
+        "correct_answer": "Specification, Development, Validation, Evolution"
+      },
+      {
+        "id": 6,
+        "question": "In software process activities, what happens during 'Software validation'?",
+        "options": [
+          "Customers and engineers define the software.",
+          "The software is designed and programmed.",
+          "The software is checked to ensure it is what the customer requires.",
+          "The software is modified to reflect changing market requirements."
+        ],
+        "correct_answer": "The software is checked to ensure it is what the customer requires."
+      },
+      {
+        "id": 7,
+        "question": "Which application type controls and manages hardware devices and is numerically the most common?",
+        "options": [
+          "Batch processing systems",
+          "Interactive transaction-based applications",
+          "Embedded control systems",
+          "Data collection systems"
+        ],
+        "correct_answer": "Embedded control systems"
+      },
+      {
+        "id": 8,
+        "question": "What type of applications execute on a remote computer and are accessed by users from their own PCs or terminals (e.g., e-commerce)?",
+        "options": [
+          "Stand-alone applications",
+          "Systems for modeling and simulation",
+          "Systems of systems",
+          "Interactive transaction-based applications"
+        ],
+        "correct_answer": "Interactive transaction-based applications"
+      },
+      {
+        "id": 9,
+        "question": "Which of the following is NOT an issue of professional responsibility in software engineering ethics?",
+        "options": [
+          "Confidentiality",
+          "Competence",
+          "Maximizing project profit",
+          "Intellectual property rights"
+        ],
+        "correct_answer": "Maximizing project profit"
+      },
+      {
+        "id": 10,
+        "question": "According to professional responsibility, what does 'Computer misuse' involve?",
+        "options": [
+          "Refusing to use computers for work",
+          "Using technical skills to misuse other people's computers (e.g., disseminating viruses)",
+          "Playing games on a personal computer at home",
+          "Writing code in an unfamiliar language"
+        ],
+        "correct_answer": "Using technical skills to misuse other people's computers (e.g., disseminating viruses)"
+      },
+      {
+        "id": 11,
+        "question": "The ACM/IEEE Code of Ethics contains how many core principles?",
+        "options": [
+          "4",
+          "6",
+          "8",
+          "10"
+        ],
+        "correct_answer": "8"
+      },
+      {
+        "id": 12,
+        "question": "Which ACM/IEEE ethical principle states that software engineers shall act consistently with the public interest?",
+        "options": [
+          "CLIENT AND EMPLOYER",
+          "PRODUCT",
+          "JUDGMENT",
+          "PUBLIC"
+        ],
+        "correct_answer": "PUBLIC"
+      },
+      {
+        "id": 13,
+        "question": "Which of the following is an example of an ethical dilemma mentioned in the presentation?",
+        "options": [
+          "Deciding which programming language to use",
+          "Disagreement in principle with the policies of senior management",
+          "Fixing a syntax error in the code",
+          "Upgrading to a new operating system"
+        ],
+        "correct_answer": "Disagreement in principle with the policies of senior management"
+      },
+      {
+        "id": 14,
+        "question": "What type of system is the 'Insulin pump control system' case study?",
+        "options": [
+          "An entertainment system",
+          "A batch processing system",
+          "A safety-critical embedded system",
+          "A digital learning environment"
+        ],
+        "correct_answer": "A safety-critical embedded system"
+      },
+      {
+        "id": 15,
+        "question": "What is the primary function of the 'Mentcare' system?",
+        "options": [
+          "To control the dosage of insulin for diabetic patients.",
+          "To collect weather data in remote wilderness areas.",
+          "To provide a virtual learning environment for schools.",
+          "To maintain records of people receiving care for mental health problems."
+        ],
+        "correct_answer": "To maintain records of people receiving care for mental health problems."
+      },
+      {
+        "id": 16,
+        "question": "What are the two major concerns specifically highlighted for the Mentcare system?",
+        "options": [
+          "Performance and Scale",
+          "Privacy and Safety",
+          "Entertainment and Graphics",
+          "Battery life and Reconfiguration"
+        ],
+        "correct_answer": "Privacy and Safety"
+      },
+      {
+        "id": 17,
+        "question": "What is the purpose of the 'Wilderness weather station'?",
+        "options": [
+          "To provide interactive web services for meteorologists.",
+          "To maintain health records for researchers in the wilderness.",
+          "To collect data from a set of instruments that measure weather parameters in remote areas.",
+          "To entertain people living in remote areas."
+        ],
+        "correct_answer": "To collect data from a set of instruments that measure weather parameters in remote areas."
+      },
+      {
+        "id": 18,
+        "question": "What architecture type does the 'iLearn' digital learning environment use?",
+        "options": [
+          "Monolithic system",
+          "Service-oriented system",
+          "Batch processing system",
+          "Embedded control system"
+        ],
+        "correct_answer": "Service-oriented system"
+      },
+      {
+        "id": 19,
+        "question": "In the iLearn system, what are 'Integrated services'?",
+        "options": [
+          "Services accessed through a browser interface that operate independently.",
+          "Services that collect weather data.",
+          "Services that provide basic application-independent functionality only.",
+          "Services that offer an API and can be accessed by other services through that API."
+        ],
+        "correct_answer": "Services that offer an API and can be accessed by other services through that API."
+      },
+      {
+        "id": 20,
+        "question": "What is the dominant approach for constructing web-based systems today?",
+        "options": [
+          "Writing everything from scratch",
+          "Using waterfall methodology",
+          "Software reuse (assembling from pre-existing components)",
+          "Batch processing"
+        ],
+        "correct_answer": "Software reuse (assembling from pre-existing components)"
+      },
+      {
+        "id": 21,
+        "question": "In web software engineering, interface development technologies like AJAX and HTML5 have emerged to support the creation of what?",
+        "options": [
+          "Legacy databases",
+          "Batch processing algorithms",
+          "Rich interfaces within a web browser",
+          "Embedded control software"
+        ],
+        "correct_answer": "Rich interfaces within a web browser"
+      },
+      {
+        "id": 22,
+        "question": "Which ethical principle dictates that engineers should not misrepresent their level of expertise and should not knowingly accept work outside it?",
+        "options": [
+          "Confidentiality",
+          "Competence",
+          "Intellectual property rights",
+          "Computer misuse"
+        ],
+        "correct_answer": "Competence"
+      },
+      {
+        "id": 23,
+        "question": "Which software process activity modifies the software to reflect changing customer and market requirements?",
+        "options": [
+          "Software specification",
+          "Software development",
+          "Software validation",
+          "Software evolution"
+        ],
+        "correct_answer": "Software evolution"
+      },
+      {
+        "id": 24,
+        "question": "What defines 'Stand-alone applications'?",
+        "options": [
+          "They are business systems that process data in large batches.",
+          "They run on a local computer, include all necessary functionality, and do not need a network.",
+          "They are composed of a number of other software systems.",
+          "They collect data from their environment using sensors."
+        ],
+        "correct_answer": "They run on a local computer, include all necessary functionality, and do not need a network."
+      },
+      {
+        "id": 25,
+        "question": "What type of system is primarily for personal use and intended to amuse the user?",
+        "options": [
+          "Data collection systems",
+          "Modeling and simulation systems",
+          "Entertainment systems",
+          "Embedded control systems"
+        ],
+        "correct_answer": "Entertainment systems"
+      },
+      {
+        "id": 26,
+        "question": "Why is software engineering considered important?",
+        "options": [
+          "It makes writing code more complicated.",
+          "It is usually cheaper in the long run to use software engineering methods rather than writing programs like a personal project.",
+          "It eliminates the need for maintenance entirely.",
+          "It only applies to web-based systems."
+        ],
+        "correct_answer": "It is usually cheaper in the long run to use software engineering methods rather than writing programs like a personal project."
+      },
+      {
+        "id": 27,
+        "question": "Which system type is developed by scientists and engineers to model physical processes or situations with interacting objects?",
+        "options": [
+          "Batch processing systems",
+          "Entertainment systems",
+          "Systems for modeling and simulation",
+          "Data collection systems"
+        ],
+        "correct_answer": "Systems for modeling and simulation"
+      },
+      {
+        "id": 28,
+        "question": "What general issue affects software due to the requirement to operate as distributed systems across networks with different types of devices?",
+        "options": [
+          "Scale",
+          "Security and trust",
+          "Heterogeneity",
+          "Business and social change"
+        ],
+        "correct_answer": "Heterogeneity"
+      },
+      {
+        "id": 29,
+        "question": "Which principle of the ACM/IEEE Code of Ethics states that engineers shall be fair to and supportive of their peers?",
+        "options": [
+          "PROFESSION",
+          "MANAGEMENT",
+          "COLLEAGUES",
+          "SELF"
+        ],
+        "correct_answer": "COLLEAGUES"
+      },
+      {
+        "id": 30,
+        "question": "In the Mentcare case study, what happens when local systems lose secure network access?",
+        "options": [
+          "The system shuts down completely.",
+          "They can download and use local copies of patient records when disconnected.",
+          "They alert the police automatically.",
+          "They switch to a batch processing mode."
+        ],
+        "correct_answer": "They can download and use local copies of patient records when disconnected."
+      },
+      {
+        "id": 31,
+        "question": "What are the essential software product attributes mentioned in the presentation?",
+        "options": [
+          "Maintainability, dependability and security, efficiency, and acceptability",
+          "Speed, color, size, and cost",
+          "Novelty, complexity, size, and documentation",
+          "Open-source, free, compiled, and fast"
+        ],
+        "correct_answer": "Maintainability, dependability and security, efficiency, and acceptability"
+      },
+      {
+        "id": 32,
+        "question": "What is 'Cloud computing' described as in the presentation?",
+        "options": [
+          "A weather prediction system",
+          "An approach to the provision of computer services where applications run remotely on the 'cloud'",
+          "A type of embedded hardware device",
+          "A batch processing algorithm"
+        ],
+        "correct_answer": "An approach to the provision of computer services where applications run remotely on the 'cloud'"
+      },
+      {
+        "id": 33,
+        "question": "Which ACM/IEEE ethical principle ensures that software engineers participate in lifelong learning regarding the practice of their profession?",
+        "options": [
+          "PROFESSION",
+          "JUDGMENT",
+          "SELF",
+          "COLLEAGUES"
+        ],
+        "correct_answer": "SELF"
+      },
+      {
+        "id": 34,
+        "question": "Which of the following is a key feature of the Mentcare system?",
+        "options": [
+          "Weather prediction",
+          "Insulin dose calculation",
+          "Game simulation",
+          "Patient monitoring"
+        ],
+        "correct_answer": "Patient monitoring"
+      },
+      {
+        "id": 35,
+        "question": "The Wilderness weather station collects data on parameter readings such as:",
+        "options": [
+          "Blood sugar levels and insulin doses",
+          "Patient treatment history and medication costs",
+          "Student homework submissions",
+          "Wind speed, ground temperature, barometric pressure, and rainfall"
+        ],
+        "correct_answer": "Wind speed, ground temperature, barometric pressure, and rainfall"
+      }
+    ]
+  }
