@@ -231,6 +231,7 @@
     </div>
   </div>
 
+  <script>window.LECTURES_DATA = window.LECTURES_DATA || {};</script>
   <script src="lectures-data.js"></script>
   <script>
     const LECTURE_COUNT = 10;
@@ -272,8 +273,14 @@
       cardsGrid.appendChild(card);
     }
 
-    function openLecture(num) {
-      const data = window.LECTURES_DATA && window.LECTURES_DATA[num];
+    async function openLecture(num) {
+      let data = (typeof window.LECTURES_DATA !== 'undefined' && (window.LECTURES_DATA[num] ?? window.LECTURES_DATA[String(num)]));
+      if (!data) {
+        try {
+          const res = await fetch('lecture' + num + '.json');
+          if (res.ok) data = await res.json();
+        } catch (e) {}
+      }
       if (!data) {
         alert('Данные лекции ' + num + ' не найдены.');
         return;
